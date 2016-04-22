@@ -2,8 +2,9 @@
 ####Esse é o repositório das ferramentas e problemas utilizados nas reuniões dos dojos de programação em python que ocorrem na Universidade Federal do Ceará - Campus Quixadá.
 
 #####Para utilizar a biblioteca de testes pydojo.py, basta seguir os seguintes comandos:
-1. Baixar o arquivo pydojo.py no mesmo diretório onde se encontra o arquivo que será aplicado os testes.
-2. Para criar os casos de testes, basta adicionar, após a definição da função, uma string com todos os casos de testes, veja seguir:
+1) Baixar o arquivo pydojo.py no mesmo diretório onde se encontra o arquivo que será aplicado os testes.
+</br>
+2) Para criar os casos de testes, basta adicionar, após a definição da função, uma string com todos os casos de testes, veja seguir:
 </br>
 Para funções:
 ```python
@@ -35,12 +36,12 @@ Para metodos de classes:
             """
             return numero1 + numero2
 ```
-3. Após todos os casos de testes adicionados, é nescessário executar os testes com a ajuda do pydojo.py:
+3) Após todos os casos de testes adicionados, é nescessário executar os testes com a ajuda do pydojo.py:
 ```python
       import pydojo
       pydojo.testmod()
 ```
-4. Veja o código completo:
+4) Veja o código completo:
 ```python
 def soma(numero1, numero2):
 	"""
