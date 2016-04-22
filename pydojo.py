@@ -1915,7 +1915,9 @@ def testmod(m=None, name=None, globs=None, verbose=None,
         master = runner
     else:
         master.merge(runner)
-
+        
+    if runner.failures == 0 and runner.tries > 0:
+        print FGREEN + ("Todos os %d testes passaram :)" % runner.tries) + RESET
     return TestResults(runner.failures, runner.tries)
 
 def testfile(filename, module_relative=True, name=None, package=None,
