@@ -1,0 +1,7 @@
+FizzBuzz
+Neste problema, você deverá retornar uma palavra de acordo com a entrada, seguindo as
+seguinte regras:
+Se entrada for um número divisíveil por 3, a função deve retornar 'Fizz';
+Se entrada for um número divisíveil por 5, a função deve retornar 'Buzz';
+Se entrada for um número divisíveil por 3 e 5 simultaneamente, a função deve retornar 'FizzBuzz';
+Se não for nenhua das opções abaixo, a função deverá retornar o próprio número.

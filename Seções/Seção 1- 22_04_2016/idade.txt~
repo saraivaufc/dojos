@@ -1,0 +1,7 @@
+Desenvolver um programa no qual o usuário entra com a sua idade e, dependendo dela, é classificado em uma categoria 
+(criança, adolescente, adulto, idoso).
+
+- Criança tem de 0 a 10 anos.
+- Adolescente tem de 11 a 18 anos.
+- Adulto tem de 19 a 50 anos.
+- Idoso tem de 51 a Infinito anos.

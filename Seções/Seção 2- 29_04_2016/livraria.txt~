@@ -1,0 +1,10 @@
+Uma livraria contém dezenas de livros e possui um esquema de descontos que leva em consideração a quantidade de livros comprados. O Problema consiste em encontrar o valor a ser pago pelo cliente para uma determinada compra.
+
+Preço de um título qualquer: R$ 42,00
+
+Descontos:
+        2 livros - 5%
+        3 livros - 10%
+        4 livros - 15%
+
+
