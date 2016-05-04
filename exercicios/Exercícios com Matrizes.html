@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <title>Exercícios com Matrizes</title>
+</head>
+<body bgcolor="#FFFFFF">
+
+<h1>
+<img src="Exerc%C3%ADcios%20com%20Matrizes_arquivos/cabecalho.gif" nosave="" height="85" width="610"></h1>
+
+<h1>
+Exercícios com Matrizes</h1>
+<br><p>1.&nbsp; Dada uma matriz real <i>A</i> com <i>m</i> linhas e <i>n</i> colunas
+e um vetor real <i>V</i> com <i>n</i> elementos, determinar o produto de
+<i>A</i>
+por <i>V</i>.
+<br><br>
+</p><p>2.&nbsp; Um vetor real <i>X</i> com <i>n</i> elementos é apresentado
+como resultado de um sistema de equações lineares <i>Ax</i>
+= <i>B</i> cujos coeficientes são representados em uma matriz real
+<i>A<sub>mxn</sub></i> e os lados direitos das equações em
+um vetor real <i>B</i> de <i>m</i> elementos. Verificar se o vetor <i>X</i>
+é realmente solução do sistema dado.
+<br><br>
+</p><p>3.&nbsp; Dadas duas matrizes reais&nbsp; <i>A<sub>mxn</sub></i> e <i>B<sub>nxp</sub></i>,
+calcular o produto de <i>A</i> por
+<i>B</i>.
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/matrizes/3C.html">Solução em C</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/matrizes/3Pascal.html">Solução em Pascal</a><br>
+</p><p>4.&nbsp; Dada uma matriz real&nbsp; <i>A<sub>mxn</sub></i>, verificar se
+existem elementos repetidos em
+<i>A</i>.
+<br><br>
+</p><p>5.&nbsp; Dizemos que uma matriz inteira <i>A<sub>nxn</sub></i>&nbsp; é
+uma <i>matriz de permutação</i> se em cada linha e em cada
+coluna houver <i>n</i>-1 elementos nulos e um único elemento igual
+a 1.
+</p><blockquote>Exemplo:
+<br>A matriz abaixo é de permutação:</blockquote>
+
+<blockquote>
+<center><img src="Exerc%C3%ADcios%20com%20Matrizes_arquivos/Image65b.gif" nosave="" height="96" width="96"></center>
+</blockquote>
+
+<blockquote>Observe que</blockquote>
+
+<blockquote>
+<center><img src="Exerc%C3%ADcios%20com%20Matrizes_arquivos/Image65c.gif" nosave="" height="74" width="91"></center>
+</blockquote>
+
+<blockquote>não é de permutação.</blockquote>
+Dada uma matriz inteira <i>A<sub>nxn</sub></i>, verificar se <i>A</i> é
+de permutação.
+<br>&nbsp;
+<br><br>
+<p>6.&nbsp; Dada uma matriz&nbsp; <i>A<sub>mxn</sub></i>, imprimir o número
+de linhas e o número de colunas nulas da matriz.
+</p><blockquote>Exemplo: <i>m</i> = 4 e <i>n</i> = 4
+<center>
+<p><img src="Exerc%C3%ADcios%20com%20Matrizes_arquivos/Image66.gif" nosave="" height="96" width="96"></p></center>
+</blockquote>
+
+<blockquote>tem 2 linhas nulas e 1 coluna nula.</blockquote>
+<br><br>
+<p>7.&nbsp; Dizemos que uma matriz quadrada inteira é um <i>quadrado
+mágico </i><font size="-1"><a href="#nota1">(1)</a></font> se a soma
+dos elementos de cada linha, a soma dos elementos de cada coluna e a soma
+dos elementos das diagonais principal e secundária são todas
+iguais.
+</p><blockquote>Exemplo: A matriz</blockquote>
+
+<blockquote>
+<center><img src="Exerc%C3%ADcios%20com%20Matrizes_arquivos/Image67.gif" nosave="" height="74" width="80"></center>
+</blockquote>
+
+<blockquote>é um quadrado mágico.</blockquote>
+Dada uma matriz quadrada <i>A<sub>nxn</sub></i> , verificar se <i>A</i>
+é um quadrado mágico.
+<br>&nbsp;
+<br><br>
+<p>8.&nbsp; (a) (MAT 83) Imprimir as n primeiras linhas do triângulo de
+Pascal <font size="-1"><a href="#nota2">(2)</a></font>.
+</p><pre><b><font size="-1">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+1&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+1&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+1&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+1&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+1&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp; 10&nbsp;&nbsp; 10&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp; 1</font></b></pre>
+
+<pre><b><font size="-1">:</font></b></pre>
+(b) Imprimir as <i>n</i> primeiras linhas do triângulo de Pascal
+usando apenas um vetor.
+<br><br>
+<p>9.&nbsp; (MAT 89) Um jogo de palavras cruzadas pode ser representado por
+uma matriz&nbsp; <i>A<sub>mxn</sub></i>&nbsp; onde cada posição
+da matriz corresponde a um quadrado do jogo, sendo que 0 indica um quadrado
+branco e -1 indica um quadrado preto. Indicar na matriz as posições
+que são início de palavras horizontais e/ou verticais nos
+quadrados correspondentes (substituindo os zeros), considerando que uma
+palavra deve ter pelo menos duas letras. Para isso, numere consecutivamente
+tais posições.
+</p><blockquote>Exemplo: Dada a matriz
+<center>
+<p><img src="Exerc%C3%ADcios%20com%20Matrizes_arquivos/Image69a.gif" nosave="" height="120" width="261"></p></center>
+</blockquote>
+
+<blockquote>A saída deverá ser
+<center>
+<p><img src="Exerc%C3%ADcios%20com%20Matrizes_arquivos/Image69b.gif" nosave="" height="120" width="261"></p></center>
+</blockquote>
+
+<blockquote align="CENTER">&nbsp;</blockquote>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/matrizes/9C.html">Solução em C</a><br>
+<p>10.&nbsp; Uma matriz&nbsp; <i>D<sub>8x8&nbsp; </sub></i>pode representar a
+posição atual de um jogo de damas <font size="-1"><a href="#nota3">(3)</a></font>,
+sendo que 0 indica uma casa vazia, 1 indica uma casa ocupada por uma peça
+branca e -1 indica uma casa ocupada por uma peça preta. Supondo
+que as peças pretas estão se movendo no sentido crescente
+das linhas da matriz <i>D</i>, determinar as posições das
+peças pretas que:
+</p><p>(a) podem tomar peças brancas;
+</p><p>(b) podem mover-se sem tomar peças;
+</p><p>(c) não podem se mover.
+<br>&nbsp;
+<br>&nbsp;
+<br><br>
+</p><p>11.&nbsp; (FEA 85) Deseja-se atualizar as contas correntes dos clientes de
+uma agência bancária. É dado o cadastro de n clientes
+contendo para cada cliente o número de sua conta e o seu saldo;
+o cadastro está ordenado pelo número da conta. Em seguida,
+é dado o número de operações efetuadas no dia
+e, para cada operação, o número da conta, uma letra
+<b>C</b> ou <b>D</b> indicando se a operação é de
+crédito ou débito e o valor da operação . Emitir
+o cadastro de clientes atualizado.
+<br><br>
+</p><p>12.&nbsp; (FEA 68) Deseja-se fazer a emissão da folha de pagamento
+de uma empresa. Para cada um dos n funcionários da empresa são
+dadas as seguintes informações:
+</p><blockquote>NOME
+<br>SAL (salário)
+<br>HED (horas extras diurnas)
+<br>HEN (horas extras noturnas)
+<br>ND (número de dependentes)
+<br>FAL (faltas em horas)
+<br>DE (descontos eventuais)
+<br>REF (gastos com refeições feitas na empresa)
+<br>VAL (vales retirados durante o mês).</blockquote>
+Emitir as seguintes informações:
+<blockquote>nome,
+<br>salário,
+<br>horas extras = HED * SAL/160 + HEN * 1.2 * SAL/160,
+<br>salário família = ND * 0.05 * salário mínimo
+vigente,
+<br>salário bruto = salário + horas extras + salário
+família.</blockquote>
+Descontos efetuados:
+<blockquote>INAMPS = 0.08 * SAL,
+<br>faltas = FAL * SAL/160,
+<br>refeições,
+<br>vales,
+<br>descontos eventuais,
+<br>imposto de renda = 0.08 * salário bruto.</blockquote>
+Salário líquido = salário bruto - desconto total.
+<br><br>
+<p>13.&nbsp; Um campeonato de futebol foi disputado por <i>n</i> times identificados
+pelos seus nomes. Para cada time são considerados os seguintes dados:
+</p><pre><tt><font size="-1">PG - número de pontos ganhos (2 por vitória, 1 por empate, 0 por derrota)&nbsp;
+
+GM - número de gols marcados&nbsp;
+
+GS - número de gols sofridos (gols difíceis de marcar)&nbsp;
+
+S&nbsp; - saldo de gols (GM - GS para os não atletas)&nbsp;
+
+V&nbsp; - número de vitórias&nbsp;
+
+GA - gol average (GM / GS, cuidado se GS = 0 )</font></tt></pre>
+(a) Dados os resultados de <i>m</i> jogos, imprima uma tabela com todos
+os dados (PG, GM, GS, S, V, GA, igual àquela que sai no jornal)
+dos <i>n</i> times. Cada resultado é representado na forma (<i>t</i><sub>1</sub>,<i>t</i><sub>2</sub>,<i>n</i><sub>1</sub>,<i>n</i><sub>2</sub>)
+cuja interpretação é a seguinte: no jogo <i>t</i><sub>1</sub>
+x <i>t</i><sub>2</sub> o resultado foi <i>n</i><sub>1</sub> x <i>n</i><sub>2</sub>.
+<blockquote>Exemplo: (São Paulo, Milan, 3, 2) que foi o placar da
+vitória que deu ao São Paulo o BICAMPEONATO MUNDIAL.</blockquote>
+(b) Com os mesmos dados do item (a), imprima a classificação
+dos times no campeonato (do primeiro para o último). A classificação
+é pelo número de pontos ganhos (PG) e em segundo lugar pelo
+saldo de gols (S). Se houver empate segundo os dois critérios, classifique
+os times envolvidos como quiser (por exemplo, pelas regras do campeonato
+paulista de 1975 <font size="-1"><a href="#nota%204">(4)</a></font>).
+<p>(c) Um grupo de torcedores organizou um bolo <font size="-1"><a href="#nota%205">(5)</a></font>
+sobre os resultados dos
+<i>m</i> jogos. Cada resultado certo vale 5 pontos
+(inclusive o placar) ou 3 pontos (apenas o vencedor ou empate). Com os
+dados do item (a) e mais os palpites que são compostos de m pares
+de números inteiros&nbsp;<img src="Exerc%C3%ADcios%20com%20Matrizes_arquivos/Image613d.gif" nosave="" height="24" width="181">,
+onde o par representa o palpite do <i>i</i>-ésimo jogo, descubra
+o nome do ganhador do bolão.
+<br><br>
+</p><p>14.&nbsp; (POLI 94) Os elementos <i>a<sub>ij</sub></i> de uma matriz inteira
+<i>A<sub>nxn
+</sub></i>representam
+os custos de transporte da cidade <i>i</i> para a cidade <i>j</i>. Dados
+<i>n</i>
+itinerários, cada um com
+<i>k</i> cidades, calcular o custo total
+para cada itinerário.
+</p><blockquote>Exemplo:
+<center>
+<p><img src="Exerc%C3%ADcios%20com%20Matrizes_arquivos/Image614b.gif" nosave="" height="96" width="161"></p></center>
+</blockquote>
+
+<blockquote>O custo do itinerário 0 3 1 3 3 2 1 0 é</blockquote>
+
+<blockquote align="CENTER"><i>a</i><sub>03</sub> + <i>a</i><sub>31</sub>
++ <i>a</i><sub>13</sub> + <i>a</i><sub>33</sub> + <i>a</i><sub>32</sub>
++ <i>a</i><sub>21</sub> + <i>a</i><sub>10</sub> = 3 + 1 + 400 + 5 + 2 +
+1 + 5 = 417</blockquote>
+<br><br>
+<p>15.&nbsp; Considere <i>n</i> cidades numeradas de 0 a <i>n</i>-1 que estão
+interligadas por uma série de estradas de mão única.
+As ligações entre as cidades são representadas pelos
+elementos de uma matriz quadrada&nbsp; <i>L<sub>nxn</sub></i>, cujos elementos
+<i>l<sub>ij</sub></i>
+assumem o valor 1 ou 0, conforme exista ou não estrada direta que
+saia da cidade <i>i</i> e chegue à cidade <i>j</i>. Assim, os elementos
+da linha <i>i</i> indicam as estradas que saem da cidade
+<i>i</i>, e os
+elementos da coluna <i>j</i> indicam as estradas que chegam à cidade
+<i>j</i>.
+</p><p>Por convenção <i>l<sub>ii</sub></i> = 1. A figura mostra
+um exemplo para <i>n</i> = 4.
+<br>&nbsp;
+</p><blockquote>&nbsp;
+<br>&nbsp;
+<table cols="2" nosave="" width="100%">
+<tbody><tr nosave="">
+<td nosave=""><img src="Exerc%C3%ADcios%20com%20Matrizes_arquivos/Image615d.gif" nosave="" height="96" width="118"></td>
+
+<td><img src="Exerc%C3%ADcios%20com%20Matrizes_arquivos/Image615e.gif" nosave="" height="119" width="271"></td>
+</tr>
+</tbody></table>
+</blockquote>
+
+<p><br>(a) Dado <i>k</i>, determinar quantas estradas saem e quantas chegam
+à cidade <i>k</i>.
+</p><p>(b) A qual das cidades chega o maior número de estradas?
+</p><p>(c) Dado <i>k</i>, verificar se todas as ligações diretas
+entre a cidade <i>k</i> e outras são de mão dupla.
+</p><p>(d) Relacionar as cidades que possuem saídas diretas para a cidade
+<i>k</i>.
+</p><p>(e) Relacionar, se existirem:
+</p><blockquote>i. As cidades isoladas, isto é, as que não têm
+ligação com nenhuma outra;
+<br>ii. As cidades das quais não há saída, apesar
+de haver entrada;
+<br>iii. As cidades das quais há saída sem haver entrada.
+<br>&nbsp;</blockquote>
+(f) Dada uma seqüência de <i>m</i> inteiros cujos valores estão
+entre 0 e <i>n</i>-1, verificar se é possível realizar o
+roteiro correspondente. No exemplo dado, o roteiro representado pela seqüência
+(<i>m</i>=5) 2 3 2 1 0 é impossível.
+<p>(g) Dados <i>k</i> e <i>p</i>, determinar se é possível
+ir da cidade <i>k </i>para a cidade <i>p</i> pelas estradas existentes.
+Você consegue encontrar o menor caminho entre as duas cidades?
+</p><p>h) Dado <i>k</i>, determinar se é possível, partindo de
+<i>k</i>,
+passar por todas as outras cidades apenas uma vez e retornar a <i>k</i>.
+<br>&nbsp;&nbsp;&nbsp; Sugestões:
+</p><blockquote>i. Pule esse item.
+<br>ii. Teste todas as possibilidades.</blockquote>
+<br><br>
+<p>
+</p><hr>
+<center><font color="#663300">Notas do texto</font></center>
+<a name="nota1"></a><font color="#663300"><font size="-1">1) O primeiro registro
+conhecido de um quadrado mágico vem da China e data de Sec II a.C.
+(esta é séria).</font></font>
+<br><a name="nota2"></a><font color="#663300"><font size="-1">2) Descoberto
+em 1654 pelo matemático francês Blaise Pascal.</font></font>
+<br><a name="nota3"></a><font color="#663300"><font size="-1">3) Cavalheiros
+também podem jogar. E se você não sabe jogar damas
+está na hora de aprender.</font></font>
+<br><a name="nota 4"></a><font color="#663300"><font size="-1">4) Último
+ano em que a Portuguesa foi campeã (ha!, ha! ha!).</font></font>
+<br><a name="nota 5"></a><font color="#663300"><font size="-1">5) Bolo ou
+bolão, original do grego, significa aposta.</font></font>
+<br><p>
+</p><hr>
+<center><table cols="3" border="0" width="50%%">
+<tbody><tr align="CENTER" valign="CENTER">
+<td><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/matrizes/index.html"><img src="Exerc%C3%ADcios%20com%20Matrizes_arquivos/topo.gif" alt="Topo da Página" nosave="" border="0" height="40" width="40"></a></td>
+
+<td align="CENTER" valign="CENTER"><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/index.html"><img src="Exerc%C3%ADcios%20com%20Matrizes_arquivos/volta.gif" alt="Índice das Listas" nosave="" border="0" height="40" width="40"></a></td>
+
+</tr>
+</tbody></table></center>
+
+<hr size="3" width="99%%">
+<center>
+<font face="ARIAL" size="2"><b><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/matrizes/historico/">História
+da Computação</a> | <a href="http://www.ime.usp.br/%7Emacmulti/exercicios/index.html">Listas de
+Exercícios</a> | <a href="http://www.ime.usp.br/%7Emacmulti/exercicios/matrizes/problemas/index.html">Problemas Resolvidos</a> | <a href="mailto:macmulti@ime.usp.br" onmouseover="window.status='Mande suas dúvidas ou sugestões.'; return true">macmulti@ime.usp.br</a></b></font><b>
+</b></center><b>
+<br>&nbsp;
+
+
+</b></body></html>

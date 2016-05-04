@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <title>Exercícios com Vetores</title>
+</head>
+<body bgcolor="#FFFFFF">
+
+<h1>
+<img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/cabecalho.gif" nosave="" height="85" width="610"></h1>
+
+<h1>
+Exercícios com Vetores</h1>
+<br><p>1.&nbsp; Dada uma seqüência de <i>n</i> números, imprimi-la
+na ordem inversa à da leitura.
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/1C.html">Solução em C</a><br>
+</p><p>2.&nbsp; Deseja-se publicar o número de acertos de cada aluno em uma
+prova em forma de testes. A prova consta de 30 questões, cada uma
+com cinco alternativas identificadas por A, B, C, D e E. Para isso são
+dados:
+</p><dd>
+o cartão gabarito;
+
+</dd><dd>
+o número de alunos da turma; 
+
+</dd><dd>
+o cartão de respostas para cada aluno, contendo o seu número
+e suas respostas.
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/2C.html">Solução em C</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/2Pascal.html">Solução em Pascal</a><br>
+<p>3.&nbsp; Tentando descobrir se um dado era viciado, um dono de cassino honesto
+(ha! ha! ha! ha!) o lançou <i>n</i> vezes. Dados os <i>n</i> resultados
+dos lançamentos, determinar o número de ocorrências
+de cada face.
+<br><br>
+</p><p>4.&nbsp; Dados dois vetores <i>x</i> e <i>y</i>, ambos com <i>n</i> elementos,
+determinar o produto escalar <font size="-1"><a href="#nota1">(1)</a></font>
+desses vetores.
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/4C.html">Solução em C</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/4Pascal.html">Solução em Pascal</a><br>
+</p><p>5.&nbsp; Faça um programa para resolver o seguinte problema:
+<br>São dadas as coordenadas reais <i>x</i> e <i>y</i> de um ponto,
+um número natural <i>n</i>, e as coordenadas reais de <i>n</i> pontos
+(<i>1 <u>&lt;</u> n <u>&lt;</u> 100</i>).
+Deseja-se calcular e imprimir sem repetição os raios
+das circunferências centradas no ponto (<i>x</i>,<i>y</i>) que passam
+por pelo menos um dos <i>n</i> pontos dados.
+</p><blockquote>Exemplo : (<i>x</i>,<i>y</i>) = (1.0, 1.0) ; <i>n</i> = 5</blockquote>
+
+<blockquote>pontos : (-1.0, 1.2) , (1.5, 2.0) , (0.0, -2.0) , (0.0, 0.5)
+, (4.0, 2.0)</blockquote>
+
+<blockquote>Nesse caso há três circunferências de raios:
+1.12,&nbsp; 2.01 e 3.162.</blockquote>
+
+<dir>
+<blockquote>Observações:</blockquote>
+</dir>
+
+<ul>
+<ul>
+<blockquote>
+<li>
+Distância entre os pontos (<i>a</i>,<i>b</i>) e (<i>c</i>,<i>d</i>)
+é&nbsp;<img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Image56.gif" nosave="" height="30" width="130"></li>
+</blockquote>
+
+<blockquote>
+<li>
+Dois pontos estão na mesma circunferência se estão
+à mesma distância do centro.</li>
+</blockquote>
+</ul>
+</ul>
+<br><br>
+<p>6.&nbsp; (COMP 89) Dados dois strings (um contendo uma frase e outro contendo
+uma palavra), determine o número de vezes que a palavra ocorre na
+frase.
+</p><blockquote>Exemplo:
+<br>Para a palavra ANA e a frase :</blockquote>
+
+<dir>
+<blockquote><u>ANA</u> E MARI<u>ANA</u> GOSTAM DE B<u>ANANA </u><font size="-1"><a href="#nota2">(2)</a></font></blockquote>
+
+<blockquote>Temos que a palavra ocorre 4 vezes na frase.</blockquote>
+</dir>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/6Pascal.html">Solução em Pascal</a><br>
+<p>7.&nbsp; (MAT 88) Dada uma seqüência de <i>n</i> números reais,
+determinar os números que compõem a seqüência
+e o número de vezes que cada um deles ocorre na mesma.
+</p><blockquote>Exemplo: <i>n</i> = 8</blockquote>
+
+<blockquote>Seqüência: -1.7,&nbsp; 3.0,&nbsp; 0.0,&nbsp; 1.5,&nbsp;
+0.0, -1.7,&nbsp; 2.3, -1,7</blockquote>
+
+<blockquote>Saída:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -1.7 ocorre
+3 vezes
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3.0 ocorre 1 vez
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 ocorre 2 vezes
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.5 ocorre 1 vez
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3 ocorre 1 vez</blockquote>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/7C.html">Solução em C</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/7Pascal.html">Solução em Pascal</a><br>
+<p>8.&nbsp; Dados dois números naturais <i>m</i> e <i>n</i> e duas seqüências
+ordenadas com <i>m</i> e <i>n</i> números inteiros, obter uma única
+seqüência ordenada contendo todos os elementos das seqüências
+originais sem repetição.
+</p><blockquote>Sugestão: Imagine uma situação real, por
+exemplo, dois fichários de uma biblioteca.</blockquote>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/8Pascal.html">Solução em Pascal</a><br>
+<p>9.&nbsp; Dadas duas seqüências com <i>n</i> números inteiros
+entre 0 e 9, interpretadas como dois números inteiros de <i>n</i>
+algarismos, calcular a seqüência de números que representa
+a soma dos dois inteiros.
+</p><blockquote>Exemplo: <i>n</i> = 8,</blockquote>
+
+<center><table cols="2" nosave="" width="80%">
+<tbody><tr nosave="">
+<td nosave="" width="20%">1ª&nbsp; seqüência</td>
+
+<td nosave="" width="40%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp; 1</td>
+</tr>
+
+<tr nosave="">
+<td nosave="">2ª&nbsp; seqüência</td>
+
+<td nosave="">+&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;
+7&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;
+3&nbsp;&nbsp;&nbsp; 7
+<br>
+<hr size="3" width="100%"></td>
+</tr>
+
+<tr>
+<td></td>
+
+<td>1&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;
+8&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;
+8</td>
+</tr>
+</tbody></table></center>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/9Pascal.html">Solução em Pascal</a><br>
+<p>10.&nbsp;  Calcule o valor do polinômio &nbsp;
+<i>p(x)=a<sub>0</sub>+a<sub>1</sub>x+...+a<sub>n</sub>x<sup>n</sup></i>
+em <i>k</i> pontos distintos. São dados os valores de <i>n</i> (grau
+do polinômio), de &nbsp;
+<i>a<sub>0</sub>, a<sub>1</sub>, ..., a<sub>n</sub></i>
+&nbsp;
+(coeficientes reais do polinômio), de <i>k</i> e dos
+pontos&nbsp; <i>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>k</sub></i>.
+<br><br>
+</p><p>11.&nbsp; Dado o polinômio &nbsp;
+<i>p(x)=a<sub>0</sub>+a<sub>1</sub>x+...+a<sub>n</sub>x<sup>n</sup></i>,
+isto é, os valores de <i>n</i> e de
+&nbsp;
+<i>a<sub>0</sub>, a<sub>1</sub>, ..., a<sub>n</sub></i>
+&nbsp;,
+determine os coeficientes reais da primeira derivada de <i>p</i>(<i>x</i>).
+<br><br>
+</p><p>12.&nbsp; Dado um polinômio &nbsp;
+<i>p(x)=a<sub>0</sub>+a<sub>1</sub>x+...+a<sub>n</sub>x<sup>n</sup></i>,
+calcular o polinômio <i>q</i>(<i>x</i>) tal que p(x)= (x-&nbsp;<img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Alfa.gif" nosave="" height="14" width="14">
+).q(x) + p(<img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Alfa.gif" nosave="" height="14" width="14"> ), para
+<i>m</i>
+valores distintos de&nbsp;<img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Alfa.gif" nosave="" height="14" width="14">
+(Usar o método de Briot-Ruffini) <font size="-1"><a href="#nota3">(3).</a></font>
+<br><br>
+</p><p>13.&nbsp; Dados dois polinômios reais &nbsp; 
+<i>p(x)=a<sub>0</sub>+a<sub>1</sub>x+...+a<sub>n</sub>x<sup>n</sup></i>
+e &nbsp; 
+<i>q(x)=b<sub>0</sub>+b<sub>1</sub>x+...+b<sub>m</sub>x<sup>m</sup></i>
+determinar o produto desses polinômios.
+<br><br>
+</p><p>14.&nbsp; (POLI 82) Chama-se <i>seqüência de Farey relativa a
+n</i>, a seqüência das frações racionais irredutíveis,
+dispostas em ordem crescente, com denominadores positivos e não
+maiores que <i>n</i>.
+</p><blockquote>Exemplo:&nbsp; Se <i>n</i>=5, os termos&nbsp;<img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Alfa.gif" nosave="" height="14" width="14">
+da seqüência de Farey, tais que 
+<i>0 <u>&lt;</u> </i> <img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Alfa.gif" nosave="" height="14" width="14">
+<i> <u>&lt;</u> 1</i> são:</blockquote>
+
+<blockquote align="CENTER">
+<center><img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Image515a.gif" nosave="" height="41" width="209"></center>
+</blockquote>
+Para gerarmos os termos&nbsp;<img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Alfa.gif" nosave="" height="14" width="14">&nbsp;
+de uma seqüência de Farey tais que 
+<i> 0 <u>&lt;</u> </i> <img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Alfa.gif" nosave="" height="14" width="14">
+<i> <u>&lt;</u> 1</i>, podemos usar o seguinte processo. Começamos com as frações
+<center><img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Image515b.gif" nosave="" height="41" width="60">,</center>
+e entre cada duas frações consecutivas
+<center><img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Image515c.gif" nosave="" height="43" width="66">,</center>
+introduzimos a fração:
+<center><img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Image515d.gif" nosave="" height="44" width="43"></center>
+
+<p>e assim sucessivamente enquanto 
+<i>j + m <u>&lt;</u> n</i>. Quando não for mais possível introduzir novas frações
+teremos gerado todos os termos<img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Alfa.gif" nosave="" height="14" width="14">
+da seqüência de Farey relativa a <i>n</i>, tais que
+<i> 0 <u>&lt;</u></i> <img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Alfa.gif" nosave="" height="14" width="14">
+<i> <u>&lt;</u> 1</i>.
+</p><p>Usando o processo descrito, determine os termos&nbsp;<img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Alfa.gif" nosave="" height="14" width="14">,
+<i>0 <u>&lt;</u></i> <img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/Alfa.gif" nosave="" height="14" width="14">
+<i><u>&lt;</u> 1</i>, da seqüência de Farey relativa a
+<i>n</i>, <i>n</i> inteiro positivo.
+</p><blockquote>Sugestão: Gere os numeradores e os denominadores em
+dois vetores.</blockquote>
+<br><br>
+<p>15.&nbsp; Em uma classe há <i>n</i> alunos, cada um dos quais
+realizou <i>k</i> provas com pesos distintos. Dados <i>n</i> , <i>k</i>,
+os pesos das <i>k</i> provas e as notas de cada aluno, calcular a média
+ponderada das provas para cada aluno e a média aritmética
+da classe em cada uma das provas.
+<br><br>
+</p><p>16.&nbsp; (QUIM 84) Dada uma seqüência &nbsp; <i>x<sub>1</sub>, x<sub>2</sub>,
+..., x<sub>k</sub></i> 
+de números inteiros, verifique se existem dois segmentos consecutivos
+iguais nesta seqüência, isto é, se existem <i>i</i> e
+<i>m</i>
+tais que:
+</p><center>
+<i>x<sub>i</sub>, x<sub>i+1</sub>,..., x<sub>i+m-1</sub> =
+x<sub>i+m</sub>, x<sub>i+m+1</sub>,..., x<sub>i+2m-1</sub>
+</i>
+</center>
+
+<p>Imprima, caso existam, os valores de <i>i</i> e <i>m</i>.
+</p><blockquote>Exemplo: Na seqüência&nbsp; 7, 9, <u>5, 4</u>, <u>5,
+4</u>, 8, 6 existem <i>i</i>=3 e <i>m</i>=2.</blockquote>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/16C.html">Solução em C</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/16Pascal.html">Solução em Pascal</a><br>
+<p>17.&nbsp; Dada uma seqüência de <i>n</i> números inteiros, 
+determinar um segmento de soma máxima.
+</p><blockquote>Exemplo: Na seqüência 5, 2, -2, -7, <u>3, 14, 10,
+-3, 9,</u> -6, 4, 1 , a soma do segmento é 33.</blockquote>
+<br><br>
+<p>18.&nbsp; <a name="simula2"></a>&nbsp; (POLI 88) Simule a execução
+do programa abaixo destacando a sua saída:
+</p><pre>#include &lt;stdio.h
+int main()
+{&nbsp;
+&nbsp; int n, inic, fim, i, aux, para, a[100];
+
+&nbsp; printf("Digite n: ");
+&nbsp; scanf("%d", &amp;n);&nbsp;
+&nbsp; printf("n = %d\n", n);
+&nbsp; printf("Digite uma sequencia de %d numeros.\n", n);
+&nbsp; for (i = 0; i &lt; n; i++) {&nbsp;
+&nbsp;&nbsp;&nbsp; scanf("%d", &amp;a[i]);&nbsp;
+&nbsp;&nbsp;&nbsp; printf("%d ", a[i]);&nbsp;
+&nbsp; }
+&nbsp; printf("\n");
+&nbsp; inic = 0;&nbsp;
+&nbsp; fim&nbsp; = n - 1;&nbsp;
+&nbsp; aux&nbsp; = a[inic];
+&nbsp; while (inic &lt; fim) {&nbsp;
+&nbsp;&nbsp;&nbsp; para = 0;
+&nbsp;&nbsp;&nbsp; while ((inic &lt; fim) &amp;&amp; !para) {&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (a[fim] &lt;= aux)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; para = 1;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fim = fim - 1;
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; if (para) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a[inic] = a[fim];&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inic = inic + 1;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; para = 0;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while ((inic &lt; fim) &amp;&amp; !para) {&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (a[inic] &lt;= aux)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inic = inic + 1;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; para = 1;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (para) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a[fim] = a[inic];&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fim = fim - 1;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; for (i = 0; i &lt; n; i++)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("%d ", a[i]);
+&nbsp;&nbsp;&nbsp; printf("\n");
+&nbsp; }&nbsp;
+&nbsp; a[inic] = aux;
+&nbsp; for (i = 0; i &lt; n; i++)&nbsp;
+&nbsp;&nbsp;&nbsp; printf("%d ", a[i]);
+&nbsp; printf("\n");
+&nbsp; return 0;
+}</pre>
+Dados:
+<br>&nbsp;&nbsp;&nbsp; 7
+<br>&nbsp;&nbsp;&nbsp; 10&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;
+12&nbsp;&nbsp;&nbsp; 13&nbsp;&nbsp;&nbsp; 7&nbsp;&nbsp;&nbsp; 15
+<br>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/18Simulacao.html">Resultado da Simulação<br></a>
+<p>
+</p><hr>
+<center><font color="#663300">Notas do texto</font></center>
+<a name="nota1"></a><font color="#663300"><font size="-1">1) Se você
+tomou pau em MAT 112 não precisa fazer este exercício.</font></font>
+<br><a name="nota2"></a><font color="#663300"><font size="-1">2)&nbsp; Esta
+frase foi contrubuição de um brilhante professor do Departamento.</font></font>
+<br><a name="nota3"></a><font color="#663300"><font size="-1">3)&nbsp; Lembra
+?</font></font>
+<br><p>
+</p><hr>
+<center><table cols="3" border="0" width="50%%">
+<tbody><tr align="CENTER" valign="CENTER">
+<td><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/index.html"><img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/topo.gif" alt="Topo da Página" nosave="" border="0" height="40" width="40"></a></td>
+
+<td align="CENTER" valign="CENTER"><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/index.html"><img src="Exerc%C3%ADcios%20com%20Vetores_arquivos/volta.gif" alt="Índice das Listas" nosave="" border="0" height="40" width="40"></a></td>
+
+</tr>
+</tbody></table></center>
+
+<hr size="3" width="99%%">
+<center>
+<font face="ARIAL" size="2"><b><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/historico/">História
+da Computação</a> | <a href="http://www.ime.usp.br/%7Emacmulti/exercicios/index.html">Listas de
+Exercícios</a> | <a href="http://www.ime.usp.br/%7Emacmulti/exercicios/vetores/problemas/index.html">Problemas Resolvidos</a> | <a href="mailto:macmulti@ime.usp.br" onmouseover="window.status='Mande suas dúvidas ou sugestões.'; return true">macmulti@ime.usp.br</a></b></font><b>
+</b></center><b>
+<br>&nbsp;
+
+
+</b></dd></body></html>

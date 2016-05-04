@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <title>Exercícios com Funçõe - Parte I</title>
+</head>
+<body bgcolor="#FFFFFF">
+
+<h1>
+<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20II_arquivos/cabecalho.gif" nosave="" height="85" width="610"></h1>
+
+<h1>
+Exercícios com Funções - Parte II</h1>
+<br><p>1.&nbsp; (a) Escreva uma função que recebe um número inteiro <i>n</i>&gt;0 e 
+    devolve o número de dígitos de <i>n</i> e o primeiro dígito de <i>n</i>.
+</p><p> (b) Escreva um programa que leia uma seqüência de <i>n</i> inteiros positivos 
+    e imprime o número de dígitos e o primeiro dígito de cada um deles. 
+<br><br>
+</p><p>2.&nbsp; (a) Escreva uma função que recebe como parâmetro um inteiro positivo <i>ano</i> e
+    devolve 1 se <i>ano</i> for bissexto, 0 em caso contrário. (Um ano é bissexto se
+    <tt>(ano % 4 == 0 &amp;&amp; (ano % 100 != 0 || ano % 400 == 0))</tt>.) 
+</p><p> (b) Escreva uma função que tem como parâmetros de entrada e saída três
+    números inteiros, <i>dia</i>, <i>mes</i> e <i>ano</i>, representando uma
+    data, e modifica esses inteiros de forma que eles representem o dia seguinte. 
+</p><p> (c) Escreva um programa que leia um inteiro positivo <i>n</i> e uma seqüência de 
+    <i>n</i> datas e imprime, para cada data, o dia seguinte.
+<br><br>
+</p><p>3.&nbsp; (a) Escreva uma função de cabeçalho 
+             <tt>int divide (int *m, int *n, int d)</tt>
+    que recebe três inteiros positivos como parâmetros e devolve 1 se <i>d</i> 
+    divide pelo menos um entre *<i>m</i> e *<i>n</i>, 0 caso contrário. Fora isso, 
+    se <i>d</i> divide *<i>m</i>, divide *<i>m</i> por <i>d</i>, e o mesmo 
+    para o *<i>n</i>.
+</p><p> (b) Escreva um programa que lê dois inteiros positivos <i>m</i> e <i>n</i> 
+    e calcula, usando a função acima, o mínimo múltiplo comum entre <i>m</i> 
+    e <i>n</i>, ou seja, <i>mmc(m,n)</i>.
+<br><br>
+</p><p>4.&nbsp; (a) Escreva uma função com protótipo 
+           <tt>void somabit (int b1, int b2, int *vaium, int *soma);</tt>
+    que recebe três bits (inteiros entre 0 e 1) <i>b1</i>, <i>b2</i> e 
+    *<i>vaium</i> e devolve um bit soma representando a soma dos três e 
+    o novo um bit "vai-um" em *vaium.
+</p><p> (b) Escreva um programa que leia dois números em binário e calcula um 
+    número em binário que é a soma dos dois números dados. Utilize a 
+    função acima.
+<br><br>
+</p><p>5.&nbsp; (a) Escreva uma função com o protótipo
+            <tt> void converte (char ch, int *tipo, char *valor); </tt>
+    que recebe um caractere <i>ch</i> e devolve em *tipo 0, se o caractere for 
+    um número inteiro, 1 se for uma letra (maiúscula ou minúscula) e 2 
+    caso contrário; e além disso, no caso de ser uma letra, converte 
+    para maiúscula, senão devolve ch inalterado.
+</p><p> (b) Escreva um programa que leia uma seqüência de <i>n</i> caracteres e 
+    imprima a seqüência convertida para maiúscula, eliminando os 
+    caracteres que não forem letras ou números.
+<br><br>
+</p><p>6.&nbsp; (POLI 94) Considere as seguintes fórmulas de recorrências:
+</p><center>
+<p><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20II_arquivos/Image44a.gif" nosave="" height="74" width="366"></p></center>
+
+<p>Podemos então montar a seguinte tabela:
+</p><center><table cellpadding="3" border="" width="154">
+<tbody><tr>
+<td valign="CENTER" width="17%">
+<center><i>i</i></center>
+</td>
+
+<td valign="CENTER" width="8%">
+<center>1</center>
+</td>
+
+<td valign="CENTER" width="8%">
+<center>2</center>
+</td>
+
+<td valign="CENTER" width="8%">
+<center>3</center>
+</td>
+
+<td valign="CENTER" width="17%">
+<center>4</center>
+</td>
+
+<td valign="CENTER" width="17%">
+<center>5</center>
+</td>
+
+<td valign="CENTER" width="25%">
+<center>...</center>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="17%">
+<center><i>F<sub>i</sub></i></center>
+</td>
+
+<td valign="CENTER" width="8%">
+<center>2</center>
+</td>
+
+<td valign="CENTER" width="8%">
+<center>1</center>
+</td>
+
+<td valign="CENTER" width="8%">
+<center>3</center>
+</td>
+
+<td valign="CENTER" width="17%">
+<center>8</center>
+</td>
+
+<td valign="CENTER" width="17%">
+<center>24</center>
+</td>
+
+<td valign="CENTER" width="25%">
+<center>...</center>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="17%">
+<center><i>G<sub>i</sub></i></center>
+</td>
+
+<td valign="CENTER" width="8%">
+<center>1</center>
+</td>
+
+<td valign="CENTER" width="8%">
+<center>2</center>
+</td>
+
+<td valign="CENTER" width="8%">
+<center>8</center>
+</td>
+
+<td valign="CENTER" width="17%">
+<center>11</center>
+</td>
+
+<td valign="CENTER" width="17%">
+<center>20</center>
+</td>
+
+<td valign="CENTER" width="25%">
+<center>...</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<p>Este exercício está dividido em três partes.
+</p><p>(a) Só para ver se você entendeu as fórmulas, qual
+é o valor de <i>F</i><sub>6</sub> e <i>G</i><sub>6</sub>?
+</p><p>(b) Faça uma função de nome <i>valor</i> que recebe
+um inteiro <i>k <u>&gt;</u>1</i> e devolve <i>F<sub>k</sub></i> e <i>G<sub>k</sub></i>.
+</p><p>&nbsp; Exemplo: Para <i>k</i>=2, a função deve devolver
+os valores 1 e 2. Para <i>k</i>=3, a função deve devolver
+os valores 3 e 8. Para <i>k</i>=4, a função deve devolver
+os valores 8 e 11.
+</p><p>&nbsp;(c) Faça um programa que lê um inteiro <i>n &gt; </i>2
+e imprime os valores<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20II_arquivos/Image44b.gif" nosave="" height="24" width="182">
+</p><p>Seu programa deve obrigatoriamente utilizar a função do
+item anterior, mesmo que você não a tenha feito.
+<br>&nbsp;
+<br><br>
+</p><p>
+</p><hr>
+<center><table cols="3" border="0" width="50%%">
+<tbody><tr align="CENTER" valign="CENTER">
+<td><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes2/index.html"><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20II_arquivos/topo.gif" alt="Topo da Página" nosave="" border="0" height="40" width="40"></a></td>
+
+<td align="CENTER" valign="CENTER"><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/index.html"><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20II_arquivos/volta.gif" alt="Índice das Listas" nosave="" border="0" height="40" width="40"></a></td>
+
+</tr>
+</tbody></table></center>
+
+<hr size="3" width="99%%">
+<center>
+<font face="ARIAL" size="2"><b><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes2/historico/">História
+da Computação</a> | <a href="http://www.ime.usp.br/%7Emacmulti/exercicios/index.html">Listas de
+Exercícios</a> | <a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes2/problemas/index.html">Problemas Resolvidos</a> | <a href="mailto:macmulti@ime.usp.br" onmouseover="window.status='Mande suas dúvidas ou sugestões.'; return true">macmulti@ime.usp.br</a></b></font><b>
+</b></center><b>
+<br>&nbsp;
+
+
+</b></body></html>

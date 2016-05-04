@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <title>Exercícios com Funçõe - Parte I</title>
+</head>
+<body bgcolor="#FFFFFF">
+
+<h1>
+<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20I_arquivos/cabecalho.gif" nosave="" height="85" width="610"></h1>
+
+<h1>
+Exercícios com Funções - Parte I</h1>
+<br><p>1.&nbsp; Um número <i>a</i> é dito <i>permutação</i>
+de um número <i>b</i> se os dígitos de <i>a</i> formam uma
+permutação dos dígitos de <i>b</i>.
+</p><p>Exemplo:&nbsp;&nbsp; 5412434 é uma permutação de
+4321445, mas não é uma permutação de 4312455.
+</p><p>Obs.: Considere que o dígito 0 (zero) não aparece nos
+números.
+</p><p>(a) Faça uma função <i>contadígitos</i>
+que dados um inteiro <i>n</i> e um inteiro <i>d</i>, <i> 0 &lt; d
+<u>&lt;</u> 9</i>, devolve quantas vezes o dígito <i>d</i> aparece em <i>n</i>.
+</p><p>(b) Usando a função do item anterior, faça um programa
+que lê dois inteiros positivos <i>a</i> e <i>b</i> e responda se <i>a</i>
+é permutação de <i>b</i>.
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes1/1C.html">Solução em C</a><br>
+</p><p>2.&nbsp; (a) Construa uma função <i>encaixa</i> que dados
+dois inteiros positivos <i>a</i> e <i>b</i> verifica se <i>b</i> corresponde
+aos últimos dígitos de <i>a</i>.
+</p><p>Ex.:
+<br>&nbsp;
+</p><center><table nosave="" width="60%">
+<tbody><tr nosave="" align="CENTER" valign="CENTER">
+<td nosave=""><i>a&nbsp;</i></td>
+
+<td nosave="" align="CENTER" valign="CENTER" width="40%"><i>&nbsp;b</i></td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td nosave="" align="CENTER" valign="CENTER">&nbsp;567890&nbsp;</td>
+
+<td nosave="" align="CENTER" valign="CENTER">&nbsp;890</td>
+
+<td nosave="" align="LEFT" valign="CENTER" width="300">=&gt; encaixa</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td nosave="" align="CENTER" valign="CENTER">1243</td>
+
+<td nosave="" align="CENTER" valign="CENTER">1243</td>
+
+<td nosave="" align="LEFT" valign="CENTER">=&gt; encaixa</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td>2457</td>
+
+<td nosave="" align="CENTER" valign="CENTER">245&nbsp;</td>
+
+<td nosave="" align="LEFT" valign="CENTER" width="100%">=&gt; não encaixa</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td nosave="" align="CENTER" valign="CENTER">457</td>
+
+<td>2457</td>
+
+<td nosave="" align="LEFT" valign="CENTER">=&gt; não encaixa</td>
+</tr>
+</tbody></table></center>
+
+<br>&nbsp;
+<p>(b) Usando a função do item anterior, faça um programa
+que lê dois inteiros positivos <i>a</i> e <i>b</i> e verifica se o menor
+deles é segmento do outro.
+</p><p>Exemplo:
+<br>&nbsp;
+</p><center><table cols="3" nosave="" border="0" width="100%">
+<tbody><tr nosave="" align="CENTER" valign="CENTER">
+<td nosave="" align="CENTER" valign="CENTER" width="15%"><i>a</i></td>
+
+<td nosave="" align="CENTER" valign="CENTER" width="15%"><i>b</i></td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td nosave="">567890</td>
+
+<td nosave="">678</td>
+
+<td nosave="" align="LEFT" valign="CENTER">=&gt; b é segmento
+de a</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td nosave="">1243</td>
+
+<td nosave="" align="CENTER" valign="CENTER">2212435</td>
+
+<td nosave="" align="LEFT" valign="CENTER">=&gt; a é segmento
+de b</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td nosave="" align="CENTER" valign="CENTER">235</td>
+
+<td nosave="" align="CENTER" valign="CENTER">236</td>
+
+<td nosave="" align="LEFT" valign="CENTER">=&gt; um não é segmento
+do outro</td>
+</tr>
+</tbody></table></center>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes1/2C.html">Solução em C</a><br>
+<p>3.&nbsp; (MAT - 94) Uma seqüência de <i>n</i> números inteiros
+não nulos é dita <i>piramidal m-alternante</i> se é
+constituída por <i>m</i> segmentos: o primeiro com um elemento,
+o segundo com dois elementos e assim por diante até o <i>m</i>-ésimo,
+com <i>m</i> elementos. Além disso, os elementos de um mesmo segmento
+devem ser todos pares ou todos ímpares e para cada segmento, se
+seus elementos forem todos pares (ímpares), os elementos do segmento
+seguinte devem ser todos ímpares (pares).
+</p><p>Por exemplo, a seqüência com <i>n</i> = 10 elementos:
+</p><p><u>12</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>3&nbsp; 7&nbsp;</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>&nbsp;
+2&nbsp; 10&nbsp; 4&nbsp;</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u> 5&nbsp;
+13&nbsp; 5&nbsp; 11</u> é piramidal 4-alternante.
+</p><p>&nbsp;&nbsp;&nbsp; A seqüência com <i>n</i> = 3 elementos:
+</p><p><u>&nbsp;7&nbsp;</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>10&nbsp;
+2</u>&nbsp;&nbsp;&nbsp;&nbsp; é&nbsp;&nbsp; piramidal 2-alternante.
+</p><p>&nbsp;&nbsp;&nbsp; A seqüência com <i>n</i> = 8 elementos:
+</p><p><u>1</u>&nbsp;&nbsp;&nbsp;&nbsp; <u>12&nbsp;&nbsp; 4</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<u>3&nbsp; 13&nbsp; 5</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>12&nbsp;
+6</u>&nbsp;&nbsp; não é piramidal alternante pois o último
+segmento não tem tamanho 4.
+</p><p>(a) Escreva uma função <i>bloco</i> que recebe como parâmetro
+um inteiro <i>n</i> e lê <i>n</i> inteiros do teclado, devolvendo
+um dos seguintes valores:
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0,&nbsp; se os <i>n</i> números
+lidos forem pares;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1,&nbsp; se os <i>n</i> números
+lidos forem ímpares;
+<br>&nbsp;&nbsp;&nbsp;&nbsp; -1,&nbsp; se entre os <i>n</i> números
+lidos há números com paridades diferentes.
+</p><p>(b) usando a função do item anterior, escreva um programa
+que, dados um inteiro <i>n <u>&gt;</u> 1</i> e uma seqüência de <i>n</i> números inteiros, verifica
+se ela é piramidal <i>m</i>-alternante. O programa deve imprimir
+o valor de <i>m</i> ou dar a resposta <i>não</i>.
+<br>&nbsp;
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes1/3Pascal.html">Solução em Pascal</a><br>
+</p><p>4.&nbsp; (POLI 97)
+</p><p>(a) Faça uma função <tt>arctan</tt> que recebe
+o número real&nbsp; <i>x&nbsp;<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20I_arquivos/pertence.gif" nosave="" height="13" width="13"></i>
+[0,1] e devolve uma aproximação do arco tangente de <i>x</i>
+(em radianos) através da série incluindo todos os termos
+da série
+</p><center>
+<p><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20I_arquivos/Image45a.gif" nosave="" height="43" width="213"></p></center>
+
+<p>incluindo todos os termos da série até
+</p><center>
+<p><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20I_arquivos/Image45b.gif" nosave="" height="50" width="89">.</p></center>
+
+<p>(b) Faça uma função <tt>angulo</tt> que recebe
+um ponto de coordenadas cartesianas reais (<i>x</i>,<i>y</i>), com
+<i>x <u>&gt;</u> 0</i>
+e  <i>y <u>&gt;</u> 0</i> e devolve o ângulo formado pelo vetor
+(<i>x</i>,<i>y</i>) e o eixo horizontal.
+</p><blockquote>Exemplos: Observe a figura abaixo e verifique que os ângulos
+correspondentes aos pontos marcados é aproximadamente</blockquote>
+
+<table cols="2" nosave="" width="100%">
+<tbody><tr nosave="">
+<td nosave="">
+<center><table cellpadding="3" border="" width="166">
+<tbody><tr>
+<td valign="CENTER" width="38%">
+<center>(0,1)</center>
+</td>
+
+<td valign="CENTER" width="62%">
+<center>90 graus</center>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="38%">
+<center>(2,2)</center>
+</td>
+
+<td valign="CENTER" width="62%">
+<center>45 graus</center>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="38%">
+<center>(1,4)</center>
+</td>
+
+<td valign="CENTER" width="62%">
+<center>75 graus</center>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="38%">
+<center>(5,1)</center>
+</td>
+
+<td valign="CENTER" width="62%">
+<center>11 graus</center>
+</td>
+</tr>
+</tbody></table></center>
+</td>
+
+<td>
+<center><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20I_arquivos/Image45c.gif" nosave="" height="191" width="206"></center>
+</td>
+</tr>
+</tbody></table>
+Use a função do item anterior mesmo que você não
+a tenha feito. Note que a função só calcula o arco
+tangente de números entre 0 e 1, e o valor devolvido é o
+ângulo em radianos (use o valor&nbsp;<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20I_arquivos/Pi.gif" nosave="" height="14" width="14">
+= 3.14 radianos = 180 graus).
+<p>Para calcular o valor do ângulo&nbsp;<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20I_arquivos/Alfa.gif" nosave="" height="14" width="14">&nbsp;
+pedido, use a seguinte fórmula:
+</p><center>
+<p><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20I_arquivos/Image45d.gif" nosave="" height="98" width="244"></p></center>
+
+<p>(c) Faça um programa que, dados <i>n</i> pontos do primeiro quadrante
+(x <u>&gt;</u> 0
+e
+<i>y <u>&gt;</u> 0</i>) através de suas coordenadas cartesianas,
+determina o ponto que forma o menor ângulo com o eixo
+horizontal. Use a função do item anterior, mesmo que
+você não a tenha feito.
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes1/4C.html">Solução em C</a><br>
+</p><p>5.&nbsp; (a) Escreva uma função que recebe um inteiro positivo <i>m</i> e
+devolve 1 se <i>m</i> é primo, 0 em caso contrário.
+</p><p> (b) Escreva um programa que leia um inteiro não-negativo <i>n</i> e
+imprima a soma dos <i>n</i> primeiros números primos. 
+<br><br>
+</p><p>6.&nbsp; (a) Escreva uma função que recebe como parâmetros dois números
+<i>a</i> e <i>b</i> e devolve o <i>mdc</i> (máximo divisor comum) 
+de <i>a</i> e <i>b</i>, calculado por meio do algoritmo de Euclides.
+</p><p> (b) Escreva um programa que leia um inteiro positivo <i>n</i> e 
+uma seqüência de <i>n</i> inteiros não-negativos e imprime o <i>mdc</i> 
+de todos os números da seqüência. 
+<br><br>
+</p><p>7.&nbsp; <a name="simula4"></a>&nbsp; (POLI 97) Simule a execução
+do programa seguinte. Faça suas contas com duas casas de precisão.
+Não se preocupe com o formato da saída.
+
+</p><pre>#include &lt;stdio.h&gt;
+
+float f1 (int x, int y) {
+&nbsp; float res;
+
+&nbsp; if (y != 0)&nbsp;
+&nbsp;&nbsp;&nbsp; res = (float) x / y;
+&nbsp; else&nbsp;
+&nbsp;&nbsp;&nbsp; res = (float) 1 / x;
+&nbsp;&nbsp;
+&nbsp; while (x &gt; y) {
+&nbsp;&nbsp;&nbsp; res = res + (float) y / x;
+&nbsp;&nbsp;&nbsp; x = x - 1;
+&nbsp; }
+&nbsp; return(res);
+}
+
+int main() {
+&nbsp; int a, b;
+&nbsp; float c, d;
+
+&nbsp; printf("Digite quatro numeros.\n");
+&nbsp; scanf("%d %d %f %f", &amp;a, &amp;b, &amp;c, &amp;d);
+&nbsp; printf("a = %d&nbsp; b = %d&nbsp; c = %f&nbsp; d = %f\n", a, b, c, d);
+&nbsp; while (a &lt; b) {
+&nbsp;&nbsp;&nbsp; if (c &gt; d) {&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d = f1(b,a);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b = b - 1;
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; else{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c = 1 / f1(a,b);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a = a + 1;
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; printf("a = %d&nbsp; b = %d&nbsp; c = %f&nbsp; d = %f\n", a, b, c, d);
+&nbsp; }
+&nbsp; return 0;
+}</pre>
+Dados:
+<p>2&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp; 3.0&nbsp;&nbsp;&nbsp; 2.0
+<br>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes1/7Simulacao.html">Resultado da Simulação<br></a>
+</p><p>
+</p><hr>
+<center><table cols="3" border="0" width="50%%">
+<tbody><tr align="CENTER" valign="CENTER">
+<td><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes1/index.html"><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20I_arquivos/topo.gif" alt="Topo da Página" nosave="" border="0" height="40" width="40"></a></td>
+
+<td align="CENTER" valign="CENTER"><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/index.html"><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20I_arquivos/volta.gif" alt="Índice das Listas" nosave="" border="0" height="40" width="40"></a></td>
+
+</tr>
+</tbody></table></center>
+
+<hr size="3" width="99%%">
+<center>
+<font face="ARIAL" size="2"><b><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes1/historico/">História
+da Computação</a> | <a href="http://www.ime.usp.br/%7Emacmulti/exercicios/index.html">Listas de
+Exercícios</a> | <a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes1/problemas/index.html">Problemas Resolvidos</a> | <a href="mailto:macmulti@ime.usp.br" onmouseover="window.status='Mande suas dúvidas ou sugestões.'; return true">macmulti@ime.usp.br</a></b></font><b>
+</b></center><b>
+<br>&nbsp;
+
+
+</b></body></html>

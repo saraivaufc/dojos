@@ -1,0 +1,813 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <title>Exercícios Complementares</title>
+</head>
+<body bgcolor="#FFFFFF">
+
+<h1>
+<img src="Exerc%C3%ADcios%20Complementares_arquivos/cabecalho.gif" nosave="" height="85" width="610"></h1>
+
+<h1>
+Exercícios Complementares <font size="-1"><a href="#nota1">(1)</a></font></h1>
+<br><p>1.&nbsp; Dada uma seqüência&nbsp; <i>x</i><sub>0</sub> + <i>x</i><sub>1</sub>
+,...,+ <i>x</i><sub>k-1</sub>&nbsp; de números inteiros, determinar
+uma subseqüência crescente de comprimento máximo.
+
+</p><dir>
+<blockquote>Exemplo: Na seqüência 5, 2, 7, <u>1, 4</u>, 11,
+<u>6,
+9</u> a subseqüência sublinhada é máxima e tem
+comprimento 4.</blockquote>
+</dir>
+<br><br>
+<p>2.&nbsp; Ajude um rato a encontrar um pedaço de queijo num labirinto
+como o do desenho abaixo:
+<br>&nbsp;
+<table nosave="" width="100%">
+<tbody><tr nosave="">
+<td nosave="" width="10%">
+<div align="right"><img src="Exerc%C3%ADcios%20Complementares_arquivos/queijo.jpg" nosave="" height="50" width="50"></div>
+
+<br>&nbsp;
+<p>&nbsp;</p></td>
+
+<td nosave="" width="50%">
+<center><img src="Exerc%C3%ADcios%20Complementares_arquivos/Image82a.gif" nosave="" height="160" width="374"></center>
+</td>
+
+<td>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p><img src="Exerc%C3%ADcios%20Complementares_arquivos/ratinho.jpg" nosave="" height="50" width="50"></p></td>
+</tr>
+</tbody></table>
+
+</p><p>Um labirinto desses pode ser representado por uma matriz retangular
+<i>L</i>,
+cujo elemento <i>l<sub>ij</sub></i> vale 0 ou -1 conforme a casa correspondente
+do labirinto seja uma passagem livre ou uma parede, respectivamente.
+</p><p>Um método geral para resolver esse problema consiste em marcar
+com o número <i>k</i> ( k= 1,2,...) todas as casas livres que estejam
+a exatamente
+<i>k</i> - 1 passos de distância do queijo, pelo caminho
+mais curto possível. Suponha que, a cada passo, o rato possa se
+deslocar de apenas uma casa na vertical ou na horizontal. Então,
+rotula-se inicialmente a posição do queijo com 1 e para cada
+k<u>&gt;</u> 2 examinam-se <i>todas</i> as casas livres do labirinto, marcando-se com
+<i>k
+</i>aquelas ainda não marcadas e que sejam adjacentes a alguma casa
+marcada com <i>k</i>-1.
+<br>A marcação continua até ser atingido um valor
+de <i>k</i> (28 no exemplo abaixo) tal que nenhuma casa esteja em condições
+de ser marcada. Ao final da marcação teremos a seguinte matriz,
+supondo o queijo em (5,10):
+</p><center>
+<p><img src="Exerc%C3%ADcios%20Complementares_arquivos/Image82b.gif" nosave="" height="149" width="357"></p></center>
+
+<p>&nbsp;&nbsp;&nbsp; O caminho mais curto até o queijo pode então
+ser determinado, partindo-se da posição do rato e passando
+a cada etapa para uma casa adjacente cuja numeração seja
+menor do que a atual.
+<br>&nbsp;&nbsp;&nbsp; Por exemplo, partindo de [0,0] o rato precisará
+percorrer pelo menos 26 casas para chegar ao queijo: [0,0], [1,0], [2,0],
+[3,0], [4,0], [4,1], [4,2],...., [4,10], [5,10].
+<br>&nbsp;&nbsp;&nbsp; Dados o labirinto (matriz <i>L</i> com elementos
+0 e -1) e as posições do rato e do queijo, determine o caminho
+mais curto que o rato deve percorrer até encontrar o queijo, se
+tal caminho existir.
+
+</p><dir>
+<blockquote>Sugestão: Escreva uma função que efetua
+a marcação (recebendo como parâmetros a matriz <i>L</i>,
+suas dimensões e a posição do queijo) e um outro que
+imprime o caminho (recebendo como parâmetros a matriz <i>L</i> já
+marcada, suas dimensões e a posição inicial do rato).</blockquote>
+</dir>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/extra/2Pascal.html">Solução em Pascal</a><br>
+<p>3.&nbsp; Considere <i>n</i> cidades numeradas de 0 a <i>n</i>-1 que estão
+interligadas por uma série de estradas de mão única.
+Um caixeiro viajante (como o Maluf em época de eleição
+<font size="-1"><a href="#nota2">(2)</a></font>)
+deseja visitar todas as cidades e retornar a cidade de partida. Dado o
+tempo que o caixeiro leva para ir de uma cidade a outra, faça um
+programa que imprime o itinerário que o caixeiro deve fazer de tal
+forma que ele visite cada cidade exatamente uma vez e gaste o menor tempo
+possível, se um tal itinerário existir. Para isso os tempos
+são dados pelos elementos de uma matriz quadrada <i>T<sub>nxn </sub></i>,
+cujos elementos
+<i>t<sub>ij</sub></i> representam o tempo para ir da cidade
+<i>i</i> para a cidade <i>j</i>. Se <i>t<sub>ij</sub></i> for zero isso
+significa que não existe estrada que vai da cidade <i>i</i> para
+a cidade <i>j</i> . Assim, os elementos da linha <i>i</i> indicam as estradas
+que saem da cidade <i>i</i> e os tempos que o caixeiro gasta para pecorrê-las,
+e os elementos da coluna
+<i>j</i> indicam as estradas que chegam à
+cidade <i>j</i> e os tempos que o caixeiro gasta para percorrê-las.
+<br>Por convenção <i>l<sub>ii</sub></i> = 1. A figura mostra
+um exemplo para <i>n</i> = 4.
+<br>&nbsp;
+<br>&nbsp;
+<table cols="2" nosave="" width="100%">
+<tbody><tr nosave="">
+<td nosave="">
+<center><img src="Exerc%C3%ADcios%20Complementares_arquivos/Image83a.gif" nosave="" height="96" width="124"></center>
+</td>
+
+<td>
+<center><img src="Exerc%C3%ADcios%20Complementares_arquivos/Image83b.gif" nosave="" height="136" width="259"></center>
+</td>
+</tr>
+</tbody></table>
+
+</p><p>No exemplo acima, se o caixeiro visitar as cidades 3, 2, 0, 1, 3 gastará
+o menor tempo possível.
+<br><br>
+</p><p>4.&nbsp; <b>Armazenamento e Recuperação de Informações</b>
+</p><p>A estrutura de <b>lista ligada</b> é muito comum no armazenamento
+de grandes volumes de informações. Consiste em ligar de uma
+forma lógica os diversos elementos de um conjunto, com o objetivo
+de permitir um acesso mais rápido a cada um deles. É utilizada
+quando o acesso ao conjunto de informações for muito freqüente,
+seja para atualizações, seja para consultas.
+<br>Pode-se construir uma estrutura de lista ligada utilizando-se uma matriz
+onde uma das colunas por exemplo seja reservada para as diversas ligações.
+</p><p>Exemplo:
+<br>Considere o arquivo de uma empresa relacionando para cada funcionário
+seu número, seu nível salarial e seu departamento. Como a
+administração desta empresa é feita a nível
+de departamento é importante que no arquivo os funcionários
+de cada um dos departamentos estejam relacionados entre si e ordenados
+seqüencialmente pelo seu número. Como são freqüentes
+as mudanças interdepartamentais no quadro de funcionários,
+não é conveniente reestruturar o arquivo a cada uma destas
+mudanças. Desta maneira, o arquivo poderia ser organizado da seguinte
+forma:
+
+</p><center><b>Matriz A</b></center>
+
+<center><table cellpadding="3" border="" width="555">
+<tbody><tr>
+<td valign="CENTER" width="12%">
+<div align="right"><i>linha</i></div>
+</td>
+
+<td valign="CENTER" width="33%">
+<center><i>nº do funcionário</i></center>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right"><i>nível</i></div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right"><i>departamento</i></div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right"><i>ligação</i></div>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="12%">
+<div align="right">0&nbsp;</div>
+</td>
+
+<td valign="CENTER" width="33%">
+<div align="right">123</div>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right">7</div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right">1</div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right">5</div>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="12%">
+<div align="right">1</div>
+</td>
+
+<td valign="CENTER" width="33%">
+<div align="right">8765</div>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right">12</div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right">1</div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right">-1</div>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="12%">
+<div align="right">2</div>
+</td>
+
+<td valign="CENTER" width="33%">
+<div align="right">9210</div>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right">4</div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right">2</div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right">-1</div>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="12%">
+<div align="right">3</div>
+</td>
+
+<td valign="CENTER" width="33%">
+<div align="right">2628</div>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right">4</div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right">3</div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right">6</div>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="12%">
+<div align="right">4</div>
+</td>
+
+<td valign="CENTER" width="33%">
+<div align="right">5571</div>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right">8</div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right">2</div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right">2</div>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="12%">
+<div align="right">5</div>
+</td>
+
+<td valign="CENTER" width="33%">
+<div align="right">652</div>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right">1</div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right">1</div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right">9</div>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="12%">
+<div align="right">6</div>
+</td>
+
+<td valign="CENTER" width="33%">
+<div align="right">7943</div>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right">1</div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right">3</div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right">-1</div>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="12%">
+<div align="right">7</div>
+</td>
+
+<td valign="CENTER" width="33%">
+<div align="right">671</div>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right">5</div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right">3</div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right">12</div>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="12%">
+<div align="right">8</div>
+</td>
+
+<td valign="CENTER" width="33%">
+<div align="right">1956</div>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right">11</div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right">2</div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right">11</div>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="12%">
+<div align="right">9</div>
+</td>
+
+<td valign="CENTER" width="33%">
+<div align="right">1398</div>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right">6</div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right">1</div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right">10</div>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="12%">
+<div align="right">10</div>
+</td>
+
+<td valign="CENTER" width="33%">
+<div align="right">3356</div>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right">3</div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right">1</div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right">1</div>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="12%">
+<div align="right">11</div>
+</td>
+
+<td valign="CENTER" width="33%">
+<div align="right">4050</div>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right">2</div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right">2</div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right">4</div>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="12%">
+<div align="right">12</div>
+</td>
+
+<td valign="CENTER" width="33%">
+<div align="right">2468</div>
+</td>
+
+<td valign="CENTER" width="12%">
+<div align="right">9</div>
+</td>
+
+<td valign="CENTER" width="28%">
+<div align="right">3</div>
+</td>
+
+<td valign="CENTER" width="16%">
+<div align="right">3</div>
+</td>
+</tr>
+</tbody></table></center>
+
+<dl>&nbsp;
+<center>
+<p><b>Matriz B</b></p></center>
+</dl>
+
+<center><table cols="4" nosave="" border="" width="40%">
+<tbody><tr nosave="" align="CENTER" valign="CENTER">
+<td><i>departamento</i></td>
+
+<td nosave="" align="CENTER" valign="CENTER" width="25">1</td>
+
+<td nosave="" align="CENTER" valign="CENTER" width="25">2</td>
+
+<td nosave="" align="CENTER" valign="CENTER" width="25">3</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td>
+<center><i>início</i></center>
+</td>
+
+<td>0</td>
+
+<td>8</td>
+
+<td nosave="" align="CENTER" valign="CENTER">7</td>
+</tr>
+</tbody></table></center>
+
+<dl>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Observe que a quarta coluna (<i>ligação</i>)
+da matriz <i>A</i> estabelece a ordem interna dos funcionários de
+cada departamento, apontando para cada um qual o próximo em ordem
+numérica no seu departamento. O número -1 indica ser o último
+funcionário do departamento. Para cada novo funcionário da
+companhia é atribuído um número e é acrescentada
+uma linha na matriz e preenchidas as colunas <i>nível</i>, <i>departamento</i>
+e <i>ligação</i>. Para mudanças interdepartamentais
+basta alterar a terceira e quarta colunas.
+<p>A matriz <i>B</i> indica, para cada departamento, a linha do primeiro
+funcionário.
+</p><p>Escreva um programa que:
+</p><p>(a) Admita a existência de uma matriz de funcionários como
+a especificada acima (as matrizes <i>A</i> e <i>B</i> devem ser lidas,
+inclusive a quarta coluna da matriz <i>A</i>).
+</p><p>(b) Permita através de funções (uma para cada caso)
+as seguintes operações, atualizando as matrizes <i>A</i>
+e <i>B</i>:
+<br>&nbsp;
+</p><dl>
+<li>
+i. Admissão de funcionário novo na empresa;</li>
+
+<li>
+ii. Demissão de funcionário da empresa;</li>
+
+<li>
+iii. Mudança de departamento por um funcionário.</li>
+</dl>
+</dl>
+Para estas operações devem ser lidas as informações:
+<ul>
+<li>
+Código do tipo da operação, sendo: 1 para operação
+de admissão, 2 para operação de demissão e
+3 para mudança de departamento;</li>
+
+<li>
+Número do funcionário;</li>
+
+<li>
+Número do departamento ao qual o funcionário passa a pertencer
+(não utilizado para operação de demissão);</li>
+
+<li>
+Número do departamento do qual o funcionário foi desligado
+(só utilizado para operação de demissão).</li>
+</ul>
+O programa deve imprimir um relatório contendo:
+<ul>
+<li>
+As matrizes <i>A</i> e <i>B</i> originais;</li>
+
+<li>
+Para cada operação:</li>
+
+<br>- o tipo de operação realizada e os dados da operação;
+<br>- a forma final das matrizes <i>A</i> e <i>B</i>.
+<br><br>
+<p>5.&nbsp; (POLI 83) Dado um mapa contendo vários países, desejamos
+colori-lo com o menor número possível de cores, de tal maneira
+que países vizinhos tenham cores distintas. Já foi demonstrado
+que qualquer mapa pode ser colorido com 4 cores diferentes. Além
+disso, existem mapas que não podem ser coloridos com menos do que
+4 cores, como por exemplo o seguinte mapa com 8 países:
+<br>&nbsp;
+<br>&nbsp;
+<table cols="2" nosave="" width="100%">
+<tbody><tr nosave="">
+<td nosave="">
+<center><img src="Exerc%C3%ADcios%20Complementares_arquivos/Image85a.gif" nosave="" height="128" width="131"></center>
+</td>
+
+<td>
+<center><img src="Exerc%C3%ADcios%20Complementares_arquivos/Image85b.jpg" nosave="" height="186" width="319"></center>
+</td>
+</tr>
+</tbody></table>
+
+</p><p>Faça um algoritmo que, dado um mapa com <i>n</i> países
+e 4 cores distintas, forneça como resposta uma cor para cada país,
+de forma que dois países vizinhos não possuam a mesma cor.
+Em C você pode declarar <i>enum cor = {verde, amarelo, vermelho,
+azul, nenhuma}</i>. Os dados para o problema são os seguintes:
+</p><ul>
+<li>
+um número natural <i>n</i> representando o número de países
+(que são numerados de 0 a <i>n</i>-1);</li>
+
+<li>
+um número natural <i>m </i>&lt; <i>n</i> representando o número
+de vizinhos máximo que um país pode ter<font size="-1"><a href="#nota3">(3)</a></font>;</li>
+
+<li>
+uma matriz natural&nbsp; <i>VIZ<sub>nxm </sub></i>representando o mapa
+da seguinte maneira: os primeiros elementos da linha <i>i</i> são
+os números dos vizinhos do país <i>i</i> de número
+menor que <i>i</i>, o resto da linha é preenchida com -1. Por exemplo,
+para o mapa desenhado abaixo (<i>n</i>=6) teríamos a seguinte matriz
+<i>VIZ</i>:</li>
+
+<dl>&nbsp;
+<table cols="2" nosave="" width="100%">
+<tbody><tr nosave="">
+<td nosave="">
+<center><img src="Exerc%C3%ADcios%20Complementares_arquivos/Image85c.gif" nosave="" height="144" width="165"></center>
+</td>
+
+<td>
+<center><img src="Exerc%C3%ADcios%20Complementares_arquivos/Image85d.gif" nosave="" height="131" width="267"></center>
+</td>
+</tr>
+</tbody></table>
+</dl>
+</ul>
+Construa o algoritmo seguindo o seguinte roteiro:</ul>
+(a) Escreva uma <i>função lógica</i> de nome <b>color</b><font size="-1"><a href="#4%29">(4)
+</a></font>que
+recebe como parâmetros:
+<blockquote>
+<blockquote>
+<li>
+um natural <i>p</i> (representando o número de um país);</li>
+
+<li>
+um natural <i>m</i>;</li>
+
+<li>
+uma cor <i>c</i>;</li>
+
+<li>
+um vetor inteiro <i>VIZPA</i>, de <i>m</i> elementos (representando os
+vizinhos do país <i>p</i> -- de número menor que <i>p</i>
+-- da mesma forma que nas linhas da matriz <i>VIZ</i>);</li>
+
+<li>
+um vetor <i>COR</i> (representando as cores já atribuídas
+aos países de número menor que <i>p</i>).</li>
+</blockquote>
+</blockquote>
+A função deve assumir <i>falso</i> se o país <i>p</i>
+não pode ser colorido com a cor <i>c</i> e assumir o valor <i>verdadeiro</i>
+em caso contrário.
+<p>(b) Escreva uma <i>função</i> de nome <b>pintar</b> que
+recebe como parâmetros:
+</p><blockquote>
+<blockquote>
+<li>
+um natural <i>p</i> (representando o número de um país);</li>
+
+<li>
+um natural <i>m</i>;</li>
+
+<li>
+um vetor natural <i>VIZPA</i> de <i>m</i> elementos (representando os vizinhos
+do país <i>p</i>, da mesma forma que nas linhas da matriz <i>VIZ</i>);</li>
+
+<li>
+um vetor <i>COR</i> (representando as cores já atribuídas
+aos países de número menor que <i>p</i>).</li>
+</blockquote>
+</blockquote>
+A função deve assumir o valor da menor cor com a qual é
+possível colorir o país <i>p</i> ou assumir o valor ``<i>nenhuma</i>''
+se não for possível colorir o país <i>p</i> com nenhuma
+das 4 cores. Para fazer esta função use a função
+<b>color</b>
+do item (a) (mesmo que você não a tenha feito).
+<p>(c) Escreva uma <i>função</i> de nome <b>recor</b><font size="-1"><a href="#5%29">(5)</a></font>
+com os seguintes parâmetros:
+<br>&nbsp;
+</p><blockquote>i. parâmetros de entrada:
+<blockquote>
+<li>
+um natural <i>p</i> (representando o número de um país);</li>
+
+<li>
+um natural <i>m</i>;</li>
+
+<li>
+uma matriz natural <i>VIZ<sub>nxm </sub></i>(representando o mapa da maneira
+dada na descrição do problema);</li>
+
+<li>
+um vetor <i>COR</i> (representando as cores já atribuídas
+aos países de número menor que <i>p</i>).</li>
+</blockquote>
+ii. parâmetros de saída:
+<blockquote>
+<li>
+um natural <i>país</i> (representando o número de um país);</li>
+
+<li>
+<i>ncor</i> (representando uma cor).</li>
+</blockquote>
+</blockquote>
+&nbsp;&nbsp;&nbsp; A função deve colocar em <i>país</i>
+o maior número menor que <i>p</i> tal que este país possa
+ser colorido com uma cor maior que sua cor original (dada no vetor <i>COR</i>).
+Em <i>ncor</i> deve ser colocada esta nova cor. Eventualmente pode haver
+mais de uma possível resposta para <i>ncor</i>. A função
+deve colocar em <i>ncor</i> a menor cor entre elas. Para fazer esta função
+use a função
+<b>color</b><font size="-1"><a href="#6%29">(6)</a></font>
+do item (a), mesmo que você não a tenha feito.
+<dl>(d) Faça um algoritmo que lê e imprime os naturais <i>n</i>
+e <i>m</i> e uma matriz de vizinhança <i>VIZ<sub>nxm</sub></i> e
+fornece como resposta um vetor <i>COR</i> de <i>n</i> elementos onde <i>COR</i>[<i>i</i>]
+representa a cor do país <i>i</i>, de forma que países vizinhos
+tenham cores diferentes. (Você deve usar somente 4 cores). Use a
+função
+<b>recor</b> do item (c) e a função
+<b>pintar</b>
+do item (b), mesmo não as tendo feito.</dl>
+
+<dir>
+<blockquote>Sugestão: Você deve dar a menor cor ao país
+de número 0 e para os países de números 1 a <i>n</i>-1
+dar a menor cor possível. Se ao tentar colorir algum país
+você verificar que não é possível lhe atribuir
+nenhuma das 4 cores, você deve alterar a cor de algum país
+colorido anteriormente e recomeçar a coloração a partir
+do país que teve a cor alterada.</blockquote>
+</dir>
+<br><br>
+<p>6.&nbsp; No <i>jogo dos oito ladrilhos</i> nós temos oito números
+colocados em uma matriz 3x3. Uma possível configuração
+do jogo é mostrada abaixo:
+
+</p><center><img src="Exerc%C3%ADcios%20Complementares_arquivos/Image86b.gif" nosave="" height="79" width="75"></center>
+
+<dl>&nbsp;&nbsp;&nbsp; A localização do branco faz parte
+da configuração. O objetivo do jogo é a partir de
+uma configuração inicial, por exemplo a configuração
+acima, chegar na configuração final, que é mostrada
+abaixo, através de movimentações do espaço
+em branco para a esquerda, para direita, para cima ou para baixo<font size="-1"><a href="#7">(7)</a></font>.
+Portanto temos quatro possíveis movimentos, alguns dos quais não
+podem ser aplicados em determinadas configurações. Por exemplo,
+somente três movimentos (esquerda, cima, direita) podem ser aplicados
+na configuração acima.</dl>
+
+<center>
+<p><br><img src="Exerc%C3%ADcios%20Complementares_arquivos/Image86c.gif" nosave="" height="78" width="74">
+<br>Configuração Final</p></center>
+
+<dl>Faça um programa que, dada uma configuração inicial
+qualquer, dá como saída uma seqüência de movimentações
+que conduzem à configuração final, se uma tal seqüência
+existir, pois para metade das possíveis configurações
+iniciais não existe uma tal seqüência<font size="-1"><a href="#8%29">(8)</a></font>.
+<br><br>
+<p>7.&nbsp; (a) Faça um programa cuja saída são todas
+as possíveis maneiras de dispormos 8 rainhas em um tabuleiro de
+xadrez de tal maneira que elas não se ataquem<font size="-1"><a href="#9%29">(9)</a></font>.
+Por exemplo uma das possíveis maneiras de dispor as rainhas<font size="-1"><a href="#10%29">(10)</a></font>
+é a seguinte:
+</p><center>
+<p><img src="Exerc%C3%ADcios%20Complementares_arquivos/Image87.gif" nosave="" height="197" width="211"></p></center>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Altere o seu programa de tal
+forma que dado <i>n</i> ele imprime todas as possíveis maneiras
+de dispor <i>n</i> rainhas em um tabuleiro <i>n</i>x<i>n</i> de tal maneira
+que duas a duas elas não se ataquem<font size="-1"><a href="#11%29">(11)</a></font>.
+<br><br>
+</p><p>8.&nbsp; Dados <i>n</i> e <i>m</i> faça um programa que verifica se
+é possível dispor <i>m</i> rainhas em um tabuleiro n x n
+de tal forma que toda posição do tabuleiro é atacada
+por pelo menos uma rainha, em caso afirmativo o seu programa deve ainda
+imprimir uma disposição das rainhas em que isso ocorre.
+<br><br>
+</p><p>
+</p><hr>
+<center><font color="#663300">Notas do texto</font></center>
+<a name="nota1"></a><font color="#663300"><font size="-1">1) Você segue
+por conta e risco... Que a força esteja com você!!! Você
+vai precisar dela.</font></font>
+<br><a name="nota2"></a><font color="#663300"><font size="-1">2)&nbsp; Este
+rodapé é vitalício.</font></font>
+<br><a name="nota3"></a><font color="#663300"><font size="-1">3)&nbsp; Um
+professor do Centro Geofísico da Malásia na sua tese de doutoramento
+contou o número de vizinhos de todos os países do mundo e
+constatou que o país com mais vizinho é Zimalwe do Sul que
+tem 10 vizinhos.</font></font>
+<br><a name="4)"></a><font color="#663300"><font size="-1">4)&nbsp; Com um
+L só !</font></font>
+<br><a name="5)"></a><font color="#663300"><font size="-1">5)&nbsp; Não
+confunda com <b>Grobo</b>.</font></font>
+<br><a name="6)"></a><font color="#663300"><font size="-1">6)&nbsp; Espero
+que seja o último</font></font>
+<br><a name="7"></a><font color="#663300"><font size="-1">7)&nbsp; Na verdade,
+o movimento do "branco" é uma troca de posições entre
+o branco e o número. Por exemplo, mover o branco para a direita,
+na configuração inicial mostrada, é o mesmo que trocar
+o branco com o número 5.</font></font>
+<br><a name="8)"></a><font color="#663300"><font size="-1">8) Acredite se
+quiser !</font></font>
+<br><a name="9)"></a><font color="#663300"><font size="-1">9) Quem não
+sabe jogar xadrez escapou de uma boa.</font></font>
+<br><a name="10)"></a><font color="#663300"><font size="-1">10) Existem 92.</font></font>
+<br><a name="11)"></a><font color="#663300"><font size="-1">11) Observe que
+para tabuleiros 2 x 2, 3 x 3, não existe solução.
+No tabuleiro 4 x 4 apenas duas soluções.</font></font>
+<br><p>
+</p><hr>
+<center><table cols="3" border="0" width="50%%">
+<tbody><tr align="CENTER" valign="CENTER">
+<td><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/extra/index.html"><img src="Exerc%C3%ADcios%20Complementares_arquivos/topo.gif" alt="Topo da Página" nosave="" border="0" height="40" width="40"></a></td>
+
+<td align="CENTER" valign="CENTER"><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/index.html"><img src="Exerc%C3%ADcios%20Complementares_arquivos/volta.gif" alt="Índice das Listas" nosave="" border="0" height="40" width="40"></a></td>
+
+</tr>
+</tbody></table></center>
+
+<hr size="3" width="99%%">
+<center>
+<font face="ARIAL" size="2"><b><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/extra/historico/">História
+da Computação</a> | <a href="http://www.ime.usp.br/%7Emacmulti/exercicios/index.html">Listas de
+Exercícios</a> | <a href="http://www.ime.usp.br/%7Emacmulti/exercicios/extra/problemas/index.html">Problemas Resolvidos</a> | <a href="mailto:macmulti@ime.usp.br" onmouseover="window.status='Mande suas dúvidas ou sugestões.'; return true">macmulti@ime.usp.br</a></b></font><b>
+</b></center><b>
+<br>&nbsp;
+
+
+</b></dl></body></html>

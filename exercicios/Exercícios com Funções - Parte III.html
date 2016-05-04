@@ -1,0 +1,1496 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <title>Exercícios com Funções - Parte III</title>
+</head>
+<body bgcolor="#FFFFFF">
+
+<h1>
+<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/cabecalho.gif" nosave="" height="85" width="610"></h1>
+
+<h1>
+Exercícios com Funções - Parte III</h1>
+<br><p>1.&nbsp; (POLI 94) Um conjunto pode ser representado por um vetor da seguinte
+forma: V[0] é o tamanho do conjunto; V[1], V[2], etc. são
+os elementos do conjunto (sem repetições).
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a) Faça uma <b>função</b>
+chamada <i>intersecção</i> que dados dois conjuntos de números
+inteiros <i>A</i> e <i>B</i>, constrói um terceiro conjunto <i>C</i>
+que é a intersecção de <i>A</i> e <i>B</i>. Lembre-se
+de que em <i>C</i>[0] a sua função deve colocar o tamanho
+da intersecção.
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Faça um <b>programa</b>
+que lê um inteiro <i>n <u>&gt;</u> 1</i>
+e uma seqüência de <i>n</i> conjuntos de números inteiros
+(cada um com no máximo 100 elementos) e constrói e imprime
+um vetor INTER que representa a intersecção dos <i>n</i>
+conjuntos.
+</p><p>Por exemplo, se <i>n</i>=3 e os conjuntos são {1, 2, 4, 9}, {2,
+4, 7, 8, 9} e {5, 4, 9}, a entrada será:
+
+<table cellpadding="3" cellspacing="0" border="0" width="563">
+<tbody><tr>
+<td valign="CENTER" width="20%">3</td>
+
+<td valign="CENTER" width="80%">O valor de <i>n</i></td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="20%">&nbsp;</td>
+
+<td valign="CENTER" width="80%">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="20%">4</td>
+
+<td valign="CENTER" width="80%">V[0] = tamanho do primeiro conjunto</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="20%">1 2 4 9</td>
+
+<td valign="CENTER" width="80%">V[1]&nbsp; V[2]&nbsp; V[3]&nbsp; V[4]</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="20%">&nbsp;</td>
+
+<td valign="CENTER" width="80%">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="20%">5</td>
+
+<td valign="CENTER" width="80%">V[0] = tamanho do segundo conjunto</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="20%">2 4 7 8 9</td>
+
+<td valign="CENTER" width="80%">V[1]&nbsp; V[2]&nbsp; V[3]&nbsp; V[4]&nbsp;
+V[5]</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="20%">&nbsp;</td>
+
+<td valign="CENTER" width="80%">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="20%">3</td>
+
+<td valign="CENTER" width="80%">V[0] = tamanho do terceiro conjunto</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="20%">5 4 9</td>
+
+<td valign="CENTER" width="80%">V[1]&nbsp; V[2]&nbsp; V[3]</td>
+</tr>
+</tbody></table>
+
+</p><dl>E o vetor INTER construído será</dl>
+
+<table cellpadding="3" cellspacing="0" border="0" width="557">
+<tbody><tr>
+<td valign="CENTER" width="27%">INTER[0] = 2</td>
+
+<td valign="CENTER" width="27%">&nbsp;</td>
+
+<td valign="CENTER" width="45%">tamanho do conjunto</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="27%">INTER[1] = 4</td>
+
+<td valign="CENTER" width="27%">INTER[2] = 9</td>
+
+<td valign="CENTER" width="45%">conjunto intersecção</td>
+</tr>
+</tbody></table>
+
+<dl>NOTE que não é preciso ler todos os conjuntos de uma
+só vez. Você pode ler os dois primeiros conjuntos e calcular
+a primeira intersecção. Depois, leia o próximo conjunto
+e calcule uma nova intesecção entre esse conjunto lido e
+o conjunto da intersecção anterior, e assim por diante.
+<p>Use obrigatoriamente a&nbsp; função do item anterior,
+mesmo que você não a tenha feito.
+<br><br>
+</p><p>2.&nbsp; (a) Escreva uma função que lê, linha
+a linha, uma matriz real <i>A<sub>mxn</sub></i>
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Escreva uma função
+que imprime uma matriz real&nbsp; <i>A<sub>mxn</sub></i>
+<br><br>
+</p><p>3.&nbsp; (a) Escreva uma função que calcula a soma
+dos elementos da linha <i>i</i> de uma matriz real <i>A<sub>mxn</sub></i>.
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Escreva uma função
+que calcula o produto dos elementos da coluna <i>j</i> de uma matriz real
+<i>A<sub>mxn</sub></i>.
+<br><br>
+</p><p>4.&nbsp; (a) Escreva uma função que troca o conteúdo
+de duas variáveis.
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Escreva uma função
+que recebe dois inteiros, <i>i</i> e <i>j</i>, uma matriz real <i>A<sub>mxn</sub></i>e
+troca linha <i>i</i> pela linha <i>j</i>. Utilize a função
+do item anterior.
+<br><br>
+</p><p>5.&nbsp; (POLI 97)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a) Faça uma função
+<i>MAX</i>
+que recebe como entrada um inteiro <i>n</i>, uma matriz inteira
+<i>A<sub>nxn
+</sub></i>e
+devolve três inteiros: <i>k</i>, <i>Lin</i> e <i>Col</i>. O inteiro
+<i>k</i>
+é um maior elemento de <i>A</i> e é igual a <i>A</i>[<i>Lin</i>,<i>Col</i>].
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Exemplo:
+</p><center><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/Image75.gif" nosave="" height="74" width="252"></center>
+</dl>
+Obs.: Se o elemento máximo ocorrer mais de uma vez, indique em <i>Lin</i>
+e <i>Col</i> qualquer uma das possíveis posições.
+<dl>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Faça um programa
+que, dado um inteiro <i>n</i> e uma matriz quadrada de ordem <i>n</i>,
+cujos elementos são todos inteiros positivos, imprime uma tabela
+onde os elementos são listados em ordem decrescente, acompanhados
+da indicação de linha e coluna a que pertencem. Havendo repetições
+de elementos na matriz, a ordem é irrelevante. Utilize obrigatoriamente
+o procedimento da parte (a), mesmo que você não o tenha feito.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ex.: No caso da matriz acima,
+a saída poderia ser:</p></dl>
+
+<center><table cols="3" nosave="" width="30%">
+<tbody><tr nosave="">
+<td nosave="">Elem</td>
+
+<td>Linha</td>
+
+<td>Coluna</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td nosave="" align="CENTER" valign="CENTER">8</td>
+
+<td>1</td>
+
+<td>2</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td nosave="">7</td>
+
+<td>
+<center>0</center>
+</td>
+
+<td>1</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td>5</td>
+
+<td nosave="">2</td>
+
+<td>0</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td>4</td>
+
+<td nosave="">2</td>
+
+<td>2</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td>3</td>
+
+<td nosave="">0</td>
+
+<td>0</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td>3</td>
+
+<td nosave="">2</td>
+
+<td nosave="">1</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td>2</td>
+
+<td nosave="" align="CENTER" valign="CENTER">1</td>
+
+<td>1</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td>1</td>
+
+<td nosave="">0</td>
+
+<td>2</td>
+</tr>
+
+<tr nosave="" align="CENTER" valign="CENTER">
+<td>1</td>
+
+<td>1</td>
+
+<td nosave="" align="CENTER" valign="CENTER">0</td>
+</tr>
+</tbody></table></center>
+<br><br>
+<p>6.&nbsp; Escreva uma função que recebe uma matriz de caracteres
+8x8 representando um tabuleiro de xadrez e calcula o valor total das peças
+do jogo. Espaços vazios do tabuleiro são codificados como
+casas com ` '(branco) e têm valor 0 (zero). O valor das demais peças
+é dado de acordo com a tabela:
+
+<br>&nbsp;
+</p><center><table cellpadding="3" border="" width="140">
+<tbody><tr>
+<td valign="CENTER" width="55%">Peça</td>
+
+<td valign="CENTER" width="45%">
+<center>Valor</center>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="55%">peão</td>
+
+<td valign="CENTER" width="45%">
+<center>1</center>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="55%">cavalo</td>
+
+<td valign="CENTER" width="45%">
+<center>3</center>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="55%">bispo</td>
+
+<td valign="CENTER" width="45%">
+<center>3</center>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="55%">torre</td>
+
+<td valign="CENTER" width="45%">
+<center>5</center>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="55%">rainha</td>
+
+<td valign="CENTER" width="45%">
+<center>10</center>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="55%">rei</td>
+
+<td valign="CENTER" width="45%">
+<center>50</center>
+</td>
+</tr>
+</tbody></table></center>
+<br><br>
+<p>7.&nbsp; (a) Escreva uma função que recebe como
+parâmetros um vetor real <i>A</i> com <i>n</i> elementos e um vetor
+real <i>B</i> com <i>m</i> elementos, ambos representando conjuntos, e
+verifica se <i>A</i> está contido em <i>B</i> (<i>A&nbsp;<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/EstaContido.gif" nosave="" height="15" width="15">
+B</i>).
+</p><dl>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Usando a função
+do item acima verifique se dois conjuntos são iguais (<i>A</i> =
+<i>B
+se e somente se</i>&nbsp; <i>A&nbsp;<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/EstaContido.gif" nosave="" height="15" width="15">
+B</i> <i>e B&nbsp;<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/EstaContido.gif" nosave="" height="15" width="15">
+A )</i> .
+<br><br>
+<p>8.&nbsp; (a) Escreva uma função que recebe uma
+matriz real <i>A<sub>mxn&nbsp; </sub></i>e determina a sua transposta (Se
+<i>B</i>
+é a matriz <i>transposta</i> de <i>A</i> então <i>a<sub>ij</sub></i>
+= <i>b<sub>ji</sub></i>).
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Escreva uma função
+que calcula o produto escalar de dois vetores dados.
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (c) Dada uma matriz real
+<i>X<sub>mxn</sub></i>,
+usando as funções acimas, calcule o produto <i>X</i> x <i>X<sup>t</sup></i>&nbsp;
+.
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (d) Faça uma função
+que verifica se uma matriz <i>A<sub>mxm&nbsp; </sub></i>é a matriz
+identidade.
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (e) Ache uma aplicação
+para esse exercício.
+<br><br>
+</p><p>9.&nbsp; (a) Dado um vetor real <i>X</i> com <i>n</i> elementos
+e um certo índice
+<i>k</i>, escreva uma função que
+determina o índice do elemento mínimo entre X[k], X[k+1],
+..., X[n-1].
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Usando a função
+do item anterior coloque os elementos de um vetor em ordem crescente.
+<br><br>
+</p><p>10.&nbsp; Para encontrar uma raiz de um polinômio &nbsp;
+<i>p(x)=a<sub>0</sub>+a<sub>1</sub>x+...+a<sub>n</sub>x<sup>n</sup></i>,
+(<i>n <u>&gt;</u> 2</i>),
+pode-se aplicar o método de Newton <font size="-1"><a href="#nota1">(1)</a></font>,
+que consiste em refinar uma aproximação inicial <i>x<sub>0</sub></i>
+dessa raiz através da expressão:
+</p><center><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/Image710.gif" nosave="" height="46" width="120"></center>
+
+n= 0,1,2,...,&nbsp; onde <i>p</i>'(<i>x</i>) é a primeira
+derivada de <i>p</i>(<i>x</i>).
+<p>&nbsp;&nbsp;&nbsp; Usualmente, repete-se esse refinamento até
+que |<i>x</i><sub>n+1 </sub>- <i>x</i><sub>n </sub>| &lt;&nbsp;<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/Epsilon.gif" nosave="" height="14" width="13">,
+&nbsp;<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/Epsilon.gif" nosave="" height="14" width="13"> <i><u>&gt;</u>
+0</i>, ou até que <i>m</i> iterações tenham sido executadas.
+<br>&nbsp;&nbsp;&nbsp; Dados um polinômio &nbsp;
+<i>p(x)=a<sub>0</sub>+a<sub>1</sub>x+...+a<sub>n</sub>x<sup>n</sup></i>,
+uma aproximação inicial <i>x<sub>0</sub></i> da raiz de <i>p(x)</i>, 
+&nbsp;<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/Epsilon.gif" nosave="" height="14" width="13">
+<i> <u>&gt;</u> 0</i> e o número máximo de iterações que devem
+ser executadas, determine uma aproximação da raiz de <i>p(x)</i>
+pelo método de Newton. Utilize uma função que, dado
+um polinômio <i>p</i>(<i>x</i>), calcula a derivada <i>p</i>'(<i>x</i>)
+e, para calcular <i>p</i>(<i>x<sub>n</sub></i>) e <i>p</i>'(<i>x<sub>n</sub></i>)
+em cada iteração, uma função que calcula o
+valor de um polinômio em um ponto.
+<br><br>
+</p><p>11.&nbsp; (a) Escreva uma função que recebe como parâmetros:
+</p><dl>
+<dl>
+<li>
+dois inteiros positivos <i>n</i> e <i>m</i>;</li>
+
+<li>
+uma matriz <i>A<sub>nxm </sub></i>;</li>
+
+<li>
+o índice <i>c</i> de uma coluna;</li>
+
+<li>
+os índices <i>k</i> e <i>p</i> de duas linhas,</li>
+</dl>
+</dl>
+e ordena entre as linhas <i>k</i> e <i>p</i> da matriz <i>A</i> segundo
+a coluna <i>c</i>.</dl>
+
+<dir>
+<blockquote>Exemplo:
+<br>n=6,&nbsp;&nbsp;&nbsp; m=3
+<br>c=1,
+<br>k=0,&nbsp;&nbsp;&nbsp;&nbsp; p=4</blockquote>
+
+<blockquote><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/Image711a.gif" nosave="" height="144" width="396"></blockquote>
+</dir>
+
+<dl>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Dadas <i>n</i> datas
+em uma matriz <i>DATA<sub>nx3&nbsp;</sub></i> , onde a primeira coluna
+corresponde ao dia, a segunda ao mês e a terceira ao ano, coloque
+essas datas em ordem cronológica crescente, usando a função
+acima.</dl>
+
+<dir>
+<blockquote>Exemplo: <i>n</i> = 6,
+<p><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/Image711b.gif" nosave="" height="144" width="486">
+<br>&nbsp;</p></blockquote>
+</dir>
+<br><br>
+<p>12.&nbsp; (a) Escreva uma função que recebe como parâmetros
+uma matriz de caracteres <i>NOMES<sub>mxn </sub></i>, os índices
+<i>i</i>
+e <i>j</i> de duas linhas e que troca os elementos da linha <i>i</i> com
+os da linha <i>j</i>.
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Escreva uma função
+que recebe como parâmetros uma matriz <i>NOMES<sub>mxn</sub></i>,
+os índices <i>i</i> e <i>j</i> de duas linhas e que devolve valor
+1 se o nome na linha <i>i</i> é maior ou igual ao da linha <i>j</i>
+(ordem alfabética) e 0 caso contrário.
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (c) São dados <i>n</i>
+nomes que serão armazenados em uma matriz&nbsp; <i>NOMES<sub>mxn</sub></i>.
+Coloque os nomes dessa matriz em ordem alfabética usando as funções
+descritas acima.
+<br><br>
+</p><p>13.&nbsp; (FEA 88)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a) Escreva uma função
+que recebe como parâmetros uma matriz real&nbsp; <i>A<sub>nxm</sub>
+,<sub> </sub></i>e uma posição (<i>i</i>,<i>j</i>) da matriz,
+e calcula a média aritmética dos vizinhos de (<i>i</i>,<i>j</i>),
+ou seja, a média entre <i>A<sub>i-1, j&nbsp;&nbsp;</sub> , A<sub>i+1,
+j&nbsp;&nbsp;</sub> ,<sub>&nbsp;</sub> A<sub>i, j+1&nbsp;&nbsp;</sub> ,A<sub>i,
+j+1.&nbsp; </sub></i>Desconsidere os vizinhos que não pertencem
+a matriz (por exemplo, os vizinhos de (0, 0) são somente (0,1) e
+(1,0) ).
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Escreva uma função
+que recebe como parâmetro uma matriz real&nbsp;<i>&nbsp;</i> <i>A<sub>nxm
+</sub></i>e devolve uma matriz&nbsp; <i>A<sup>média</sup></i>, onde
+<i>a<sub>ij</sub><sup>média
+</sup></i>é a média aritmética dos vizinhos de (<i>i</i>,<i>j</i>).
+Para isto, utilize a função do item anterior.
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (c) Escreva um programa que
+lê uma matriz real&nbsp; <i>A<sub>nxm </sub></i>, e um número
+inteiro <i>k</i>; utilizando a função do item anterior, o
+programa deve transformar a matriz <i>k</i> vezes, imprimindo a matriz
+inicial e depois de cada transformação.<br>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes3/13Pascal.html">Solução em Pascal</a><br>
+</p><p>14.&nbsp; Dizemos que uma matriz <i>A<sub>nxn&nbsp; </sub></i>é um
+<i>quadrado
+latino</i> de ordem
+<i>n</i> se em cada linha e em cada coluna aparecem
+todos os inteiros 1,2,3,...,n (ou seja, cada linha e coluna é permutação
+dos inteiros 1,2,...,n).
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Exemplo:
+</p><center><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/Image714.gif" nosave="" height="96" width="97"></center>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A matriz acima é
+um <i>quadrado latino</i> de ordem 4.
+<dl>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a) Escreva uma função
+que recebe como parâmetros um inteiro <i>n</i>, um vetor <i>V</i>
+com <i>n</i> inteiros e verifica se em <i>V</i> ocorrem todos os inteiros
+de 1 a <i>n</i>.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Usando a função
+acima, verifique se uma dada matriz inteira <i>A<sub>nxn&nbsp;&nbsp; </sub></i>é
+um quadrado latino de ordem <i>n</i>.
+<br><br>
+</p><p>15.&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a) Faça uma função
+que transforma um número num vetor correspondente à sua representação
+binária.
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Dados inteiros positivos
+<i>n</i>
+e <i>m</i>, e os vetores <i>ReprN</i> e <i>ReprM</i> correspondentes à
+representação binária dos números
+<i>n</i>
+e <i>m</i>, considere a seguinte matriz <i>A</i> de caracteres:
+</p><p><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/Image715.gif" nosave="" align="LEFT" height="74" width="53">`*'
+se <i>ReprN</i>[<i>i</i>]= 1 e <i>ReprM</i>[<i>j</i>]= 1
+</p><p>`&nbsp; ' caso contrário</p></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Faça um programa que
+recebe <i>n</i> e <i>m</i>, e constrói a matriz <i>A </i>descrita
+acima, usando o item (a).
+<br><br>
+<p>16.&nbsp; (POLI 96) Dada uma matriz real quadrada <i>A</i> de ordem <i>n</i>
+e um inteiro positivo <i>k</i>, define-se a aproximação da
+matriz real <i>e<sup>A</sup></i> pela soma abaixo:
+</p><center>
+<p><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/Image716.gif" nosave="" height="43" width="217"></p></center>
+
+sendo <i>I<sub>n</sub></i> a matriz identidade de ordem <i>n</i>.
+<dl>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a) Faça uma função
+que recebe como parâmetros um inteiro <i>n</i> e duas matrizes quadradas
+reais <i>X</i> e <i>Y</i> de ordem <i>n</i>. Esta função
+devolve em uma matriz <i>Z</i>, também passada como parâmetro,
+a soma das matrizes <i>X</i> e <i>Y</i>.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Escreva uma função
+que recebe como parâmetro um número inteiro <i>n</i>, um número
+real <i>c</i> e uma matriz <i>X<sub>nxn</sub></i>. A função
+devolve em uma matriz <i>Y</i>, também passada como parâmetro,
+o produto do número <i>c</i> pela matriz <i>X</i>. Ou seja,
+</p><p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Y<sub>i,j </sub></i>= c *<i><sub> </sub>X<sub>i,j&nbsp;&nbsp;&nbsp; </sub></i>para&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i>0<u>&lt;</u> i <u>&lt;</u> n-1</i>&nbsp;&nbsp;&nbsp; e&nbsp;&nbsp; 
+<i> 0 <u>&lt;</u> j <u>&lt;</u> n-1</i></p></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (c) Escreva uma função
+que recebe como parâmetros um inteiro <i>n</i> e duas matrizes quadradas
+reais <i>X<sub>nxn </sub></i>e <i>Y<sub>nxn</sub></i>. Esta função
+devolve em uma matriz <i>Z</i>, também passada como parâmetro,
+o produto das matrizes <i>X</i> e <i>Y</i>.
+<dl>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (d) Faça um programa
+que, dados dois inteiros <i>n</i> e <i>k</i> e uma matriz real quadrada
+<i>A<sub>nxn</sub></i>,
+determina uma aproximação da matriz real <i>e<sup>A</sup></i>
+utilizando <b>obrigatoriamente</b> as três funções
+mencionadas anteriormente.
+<br><br>
+<p>17.&nbsp; (POLI 86) Este problema consta de três partes:
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a) Escreva uma <i>função</i>
+de nome <b>Início</b> com os seguintes parâmetros de entrada:
+</p><dl>
+<ul>
+<dl>
+<dl>
+<li>
+um vetor alfanumérico <i>V</i> com <i>n</i> elementos;</li>
+
+<li>
+um inteiro <i>n</i>.</li>
+</dl>
+</dl>
+</ul>
+</dl>
+
+<p><br>O valor da função deve ser o <b>índice</b>
+da posição onde se inicia a última palavra de <i>V</i>
+(isto é, o índice da primeira letra dessa palavra).
+</p><p>Exemplo:</p></dl>
+
+<center><table cols="13" nosave="" border="" width="60%">
+<tbody><tr nosave="" align="CENTER" valign="CENTER">
+<td nosave="">E</td>
+
+<td>S</td>
+
+<td>S</td>
+
+<td>E</td>
+
+<td>&nbsp;</td>
+
+<td>É</td>
+
+<td>&nbsp;</td>
+
+<td>F</td>
+
+<td>Á</td>
+
+<td>C</td>
+
+<td>I</td>
+
+<td>L</td>
+
+<td nosave="">!</td>
+</tr>
+</tbody></table></center>
+
+<dl>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O valor da função
+deve ser 7.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Escreva uma <i>função</i>
+de nome <b>Insere</b> com os seguintes parâmetros:
+</p><dl>
+<dl>
+<dl>
+<li>
+uma matriz alfanumérica <i>T</i>;</li>
+
+<li>
+dois inteiros <i>m</i> e <i>n</i>;</li>
+
+<li>
+um inteiro <i>k</i>.</li>
+</dl>
+</dl>
+</dl>
+A função insere uma nova linha preenchida com brancos, entre
+as linhas <i>k</i> e <i>k</i>+1 da matriz <i>T</i>, devolvendo a nova matriz
+<i>T<sub>(m+1)xn</sub></i>.
+<dl>&nbsp;
+<br>(c) Faça um programa que:
+<dl>
+<dl>
+<li>
+lê e imprime dois inteiros <i>m</i> e <i>n</i> e uma matriz alfanumérica
+<i>A<sub>mxn
+</sub></i>onde cada elemento contém um único caractere;</li>
+
+<li>
+elimina (conforme explicado abaixo) as ``quebras'' de palavras entre uma
+linha e outra, do texto armazenado em <i>A</i>;</li>
+
+<li>
+imprime o novo conteúdo da matriz <i>A</i>.</li>
+</dl>
+</dl>
+</dl>
+</dl>
+Diz-se que existe ``quebra'' de palavras entre uma linha e outra somente
+quando o último caractere da linha e o primeiro da linha seguinte
+são ambos diferentes de branco. Exemplo: <font size="-1"><a href="#nota2">(2)</a></font>
+<br>&nbsp;
+<table cols="16" nosave="" border="" width="100%">
+<tbody><tr>
+<td>O</td>
+
+<td>&nbsp;</td>
+
+<td>Q</td>
+
+<td>U</td>
+
+<td>E</td>
+
+<td>&nbsp;</td>
+
+<td>É</td>
+
+<td>&nbsp;</td>
+
+<td>B</td>
+
+<td>O</td>
+
+<td>M</td>
+
+<td>&nbsp;</td>
+
+<td>A</td>
+
+<td>&nbsp;</td>
+
+<td>G</td>
+
+<td>E</td>
+</tr>
+
+<tr>
+<td>N</td>
+
+<td>T</td>
+
+<td>E</td>
+
+<td>&nbsp;</td>
+
+<td>F</td>
+
+<td>A</td>
+
+<td>T</td>
+
+<td>U</td>
+
+<td>R</td>
+
+<td>A</td>
+
+<td>,</td>
+
+<td>&nbsp;</td>
+
+<td>O</td>
+
+<td>&nbsp;</td>
+
+<td>Q</td>
+
+<td>U</td>
+</tr>
+
+<tr>
+<td>E</td>
+
+<td>&nbsp;</td>
+
+<td>É</td>
+
+<td>&nbsp;</td>
+
+<td>R</td>
+
+<td>U</td>
+
+<td>I</td>
+
+<td>M</td>
+
+<td>&nbsp;</td>
+
+<td>A</td>
+
+<td>&nbsp;</td>
+
+<td>G</td>
+
+<td>E</td>
+
+<td>N</td>
+
+<td>T</td>
+
+<td>E</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>E</td>
+
+<td>S</td>
+
+<td>C</td>
+
+<td>O</td>
+
+<td>N</td>
+
+<td>D</td>
+
+<td>E</td>
+
+<td>.</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+
+<br>&nbsp;
+<p>A eliminação da ``quebra'' deve ser feita inserindo-se
+uma nova linha, que será ocupada apenas pela palavra ``quebrada''.
+As posições anteriormente ocupadas pela palavra devem passar
+a conter brancos.
+</p><p>Supõe-se que qualquer palavra do texto caiba inteiramente em
+uma linha.
+</p><p>No exemplo acima, o novo conteúdo da matriz <i>A</i>, após
+eliminar a ``quebra'' da palavra GENTE, seria:
+<br>&nbsp;
+<table cols="16" nosave="" border="" width="100%">
+<tbody><tr>
+<td>O</td>
+
+<td>&nbsp;</td>
+
+<td>Q</td>
+
+<td>U</td>
+
+<td>E</td>
+
+<td>&nbsp;</td>
+
+<td>É</td>
+
+<td>&nbsp;</td>
+
+<td>B</td>
+
+<td>O</td>
+
+<td>M</td>
+
+<td>&nbsp;</td>
+
+<td>A</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>G</td>
+
+<td>E</td>
+
+<td>N</td>
+
+<td>T&nbsp;</td>
+
+<td>E</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>F</td>
+
+<td>A</td>
+
+<td>T</td>
+
+<td>U</td>
+
+<td>R&nbsp;</td>
+
+<td>A</td>
+
+<td>,&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>O</td>
+
+<td>&nbsp;</td>
+
+<td>Q</td>
+
+<td>U</td>
+</tr>
+
+<tr>
+<td>E&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>É</td>
+
+<td>&nbsp;</td>
+
+<td>R</td>
+
+<td>U</td>
+
+<td>I</td>
+
+<td>M</td>
+
+<td>&nbsp;</td>
+
+<td>A&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>G&nbsp;</td>
+
+<td>E&nbsp;</td>
+
+<td>N&nbsp;</td>
+
+<td>T&nbsp;</td>
+
+<td>E&nbsp;</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>E</td>
+
+<td>S</td>
+
+<td>C</td>
+
+<td>O</td>
+
+<td>N</td>
+
+<td>D</td>
+
+<td>E</td>
+
+<td>.</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+
+</p><p>Use obrigatoriamente as funções definidas nos itens (a)
+e (b) (mesmo que você não as tenha feito).
+</p><blockquote>Observação: no texto existe pelo menos um branco
+separando duas palavras consecutivas, mesmo que elas estejam em linhas
+diferentes.</blockquote>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes3/17Pascal.html">Solução em Pascal</a><br>
+<p>18.&nbsp; Considere um exame de vestibular em que as questões são
+do tipo teste. Deseja-se obter uma lista com o nome, o número de
+identificação e o número de pontos de cada um dos
+candidatos, em ordem decrescente de pontos. A resolução deste
+problema será dividida em três partes:
+</p><p>(a) Escreva uma <i>função</i> <b>Pontos</b> com os seguintes
+parâmetros:
+</p><dl>
+<dl>
+<li>
+um inteiro <i>XN</i>;</li>
+
+<li>
+um vetor inteiro <i>XResp</i>, onde <i>XResp[i]</i> é a resposta
+à questão <i>i</i> dada por um candidato;</li>
+
+<li>
+um vetor inteiro <i>XGab</i>, onde <i>XGab[i]</i> é a resposta correta
+à questão <i>i</i>.</li>
+</dl>
+</dl>
+
+<p><br>O valor que esta função deve assumir é o número
+de pontos feitos pelo candidato cujas respostas estão armazenadas
+em <i>XResp</i>.
+</p><p>(b) Escreva uma <i>função</i> <b>Insere</b> com os seguintes
+parâmetros:
+<br>&nbsp;
+</p><dl>
+<dl>
+<li>
+um vetor <i>A</i> contendo as informações de vários
+candidatos: nome, número de identificação e número
+de pontos, classificado em ordem decrescente pelo número de pontos;</li>
+
+<li>
+um inteiro <i>NA</i> que representa o número de elementos de <i>A</i>;</li>
+
+<li>
+<i>InfoCandidato</i> contendo as informações de um candidato.</li>
+</dl>
+</dl>
+
+<p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esta função
+insere o candidato <i>InfoCandidato</i> no vetor
+<i>A</i>, de modo que
+os candidatos continuem armazenados por ordem decrescente de pontos.
+</p><p>(c) Escreva um programa que recebe como dados:
+<br>&nbsp;
+</p><dl>
+<dl>
+<li>
+um inteiro <i>n,</i> que representa o número de questões
+de um exame vestibular;</li>
+
+<li>
+um vetor inteiro <i>Gab</i>, contendo o gabarito das <i>n</i> questões;</li>
+
+<li>
+um inteiro <i>m</i>, que é o número de candidatos que prestam
+o vestibular;</li>
+
+<li>
+o nome de cada candidato, o seu número de identificação
+e suas respectivas respostas.</li>
+</dl>
+</dl>
+
+<p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e constrói um
+vetor contendo o nome, o número de identificação e
+o número de pontos alcançados por cada candidato, em ordem
+decrescente de pontos.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Utilize obrigatoriamente
+as funções Pontos e Insere, mesmo que você não
+as tenha feito.
+<br><br>
+</p><p>19.&nbsp; (POLI 96) Uma função matemática pode ser representada
+por um vetor. Por exemplo, com <i>n</i> = 5 e o vetor de tamanho <i>n</i>[0.0,
+0.5, 1.0, 1.5, 2.0] estamos representando a função
+<i>f</i>(<i>i</i>)=<i>i</i>/2,
+<i>i</i>=0,1,2,3,4.
+</p><p>O alisamento de uma função é definido como:
+<br>&nbsp;
+</p><dl>
+<dl>
+<li>
+<img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/Image719.gif" nosave="" height="41" width="350"></li>
+
+<li>
+<i>g</i>(0) = <i>g</i>(1);</li>
+
+<li>
+<i>g</i>(<i>n</i>-1) = <i>g</i>(<i>n</i>-2).</li>
+</dl>
+</dl>
+
+<p><br>&nbsp;&nbsp;&nbsp; Para o exemplo acima, temos:
+
+<table cellpadding="3" border="" width="587">
+<tbody><tr>
+<td valign="CENTER" width="15%">
+<center>0.0</center>
+</td>
+
+<td valign="CENTER" width="15%">
+<center>0.5</center>
+</td>
+
+<td valign="CENTER" width="7%">
+<center>1.0</center>
+</td>
+
+<td valign="CENTER" width="15%">
+<center>1.5</center>
+</td>
+
+<td valign="CENTER" width="15%">
+<center>2.0</center>
+</td>
+
+<td valign="CENTER" width="33%">
+<center>função f</center>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="15%">
+<center>0.5</center>
+</td>
+
+<td valign="CENTER" width="15%">
+<center>0.5</center>
+</td>
+
+<td valign="CENTER" width="7%">
+<center>1.0</center>
+</td>
+
+<td valign="CENTER" width="15%">
+<center>1.5</center>
+</td>
+
+<td valign="CENTER" width="15%">
+<center>1.5</center>
+</td>
+
+<td valign="CENTER" width="33%">
+<center>alisamento g</center>
+</td>
+</tr>
+
+<tr>
+<td valign="CENTER" width="15%">
+<center>0.66...</center>
+</td>
+
+<td valign="CENTER" width="15%">
+<center>0.66...</center>
+</td>
+
+<td valign="CENTER" width="7%">
+<center>1.0</center>
+</td>
+
+<td valign="CENTER" width="15%">
+<center>1.33...</center>
+</td>
+
+<td valign="CENTER" width="15%">
+<center>1.33...</center>
+</td>
+
+<td valign="CENTER" width="33%">
+<center>alisamento de g</center>
+</td>
+</tr>
+</tbody></table>
+
+</p><dl>&nbsp; Obs.: Não utilize variáveis globais para escrever
+as funções abaixo.
+<p>(a) Escreva uma função <b>alisa</b> que recebe um vetor
+real F com <i>n</i> elementos e devolve um vetor G contendo o alisamento
+da função representada em F.
+</p><p>(b) Escreva uma função <b>realisa </b>que recebe <i>m,n</i>
+inteiros e um vetor F de <i>n</i> números reais e retorne em uma
+matriz de números reais&nbsp; <i>A<sub>mxn&nbsp;</sub></i> os <i>m</i>
+alisamentos sucessivos da função representada em <i>F</i>.
+Cada vetor deverá ser armazenado em um linha da matriz.
+</p><p>(c) Escreva uma função <b>avalia</b> que recebe os números
+inteiros <i>m,n</i> e um vetor F de n números reais e, utilizando
+obrigatoriamente a função do item anterior (se não
+o fez, escreva apenas o protótipo) retorne quais são os valores
+máximo e mínimo da representação do m-ésimo
+alisamento de F.
+<br>&nbsp;
+<br><br>
+</p><p>20.&nbsp; Simule a execução do seguinte
+programa, destacando a sua saída.</p></dl>
+
+<pre>#include &lt;stdio.h&gt;
+
+/* Variavel Global */
+int i;
+
+void p1(int x)
+{&nbsp;
+&nbsp; i = i + 1;&nbsp;
+&nbsp; x = x + 2;
+&nbsp; printf("%d\n", x);
+}
+
+void p2(int *x)
+{&nbsp;
+&nbsp; i&nbsp; =&nbsp; i + 1;&nbsp;
+&nbsp; *x = *x + 2;
+&nbsp; printf("%d\n", *x);
+}
+
+int main()
+{&nbsp;
+&nbsp; /* Variavel Local */
+&nbsp; int a[2];
+
+&nbsp; a[0] = 10;&nbsp;
+&nbsp; a[1] = 20;
+&nbsp; printf("%d %d\n", a[0], a[1]);
+&nbsp; i = 0;&nbsp;
+&nbsp; p1(a[i]);
+&nbsp; printf("%d %d\n", a[0], a[1]);
+&nbsp; a[0] = 10;&nbsp;
+&nbsp; a[1] = 20;
+&nbsp; i = 0;&nbsp;
+&nbsp; p2(&amp;a[i]);
+&nbsp; printf("%d %d\n", a[0], a[1]);
+&nbsp; return 0;
+}</pre>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes3/20Simulacao.html">Resultado da Simulação<br></a>
+<p>21.&nbsp; (POLI 87) Simule a execução
+do programa abaixo destacando a sua saída:
+
+</p><pre>int main()
+{&nbsp;
+&nbsp; int m, x, nv, i, k, achou, b[50], v[50];
+
+&nbsp; printf("Digite o tamanho da sequencia: ");
+&nbsp; scanf("%d", &amp;m);&nbsp;
+&nbsp; printf("Tamanho = %d\n", m);
+&nbsp; for (i = 0; i &lt; m; i++) {&nbsp;
+&nbsp;&nbsp;&nbsp; scanf("%d", &amp;b[i]);&nbsp;
+&nbsp;&nbsp;&nbsp; printf("%d ", b[i]);&nbsp;
+&nbsp; }
+&nbsp; printf("\n");
+&nbsp; i = 0;&nbsp;
+&nbsp; achou = 0;
+&nbsp; while (!achou &amp;&amp; (i&lt;m)) {&nbsp;
+&nbsp;&nbsp;&nbsp; constroi(b, m, b[i], v, &amp;nv);
+&nbsp;&nbsp;&nbsp; printf("Elemento = %d\n", b[i]);
+&nbsp;&nbsp;&nbsp; for (k = 0; k &lt; nv; k++)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("%d ", v[k]);
+&nbsp;&nbsp;&nbsp; printf("\n");&nbsp;
+&nbsp;&nbsp;&nbsp; printf("Total = %d\n", nv);
+&nbsp;&nbsp;&nbsp; if (nv == m/2)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; achou = 1;
+&nbsp;&nbsp;&nbsp; else&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i = i + 1;&nbsp;
+&nbsp; }&nbsp;
+&nbsp; if (achou) {&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; printf("Achou o %d\n", b[i]);
+&nbsp;&nbsp;&nbsp; for (k = 0; k &lt; nv; k++)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("%d ", b[v[k]]);
+&nbsp;&nbsp;&nbsp; printf("\n");
+&nbsp; }&nbsp;
+&nbsp; constroi(b, m, 20, v, &amp;nv);
+&nbsp; printf("Elemento = 20\n");
+&nbsp; for (k = 0; k &lt; nv; k++)&nbsp;
+&nbsp;&nbsp;&nbsp; printf("%d ", v[k]);
+&nbsp; printf("\n");&nbsp;
+&nbsp; return 0;
+}</pre>
+
+<dl>Dados:
+<br>6
+<br>25&nbsp; 13&nbsp; 18&nbsp; 37&nbsp; 12&nbsp; 10
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes3/21Simulacao.html">Resultado da Simulação<br></a>
+<p>22.&nbsp; (POLI 88) Simule a execução
+do programa abaixo destacando a sua saída:</p></dl>
+
+<pre>#include &lt;stdio.h&gt;
+#define max 50
+
+void imprime(int a[][max], int n)
+{&nbsp;
+&nbsp; int i, j;
+&nbsp; for (i = 0; i &lt; n; i++) {&nbsp;
+&nbsp;&nbsp;&nbsp; for (j = 0; j &lt; n; j++)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("%2d ", a[i][j]);
+&nbsp;&nbsp;&nbsp; printf("\n");
+&nbsp; }
+}
+
+void soma(int a[][max], int b[][max], int n)
+{&nbsp;
+&nbsp; int i, j;
+
+&nbsp; for (i = 0; i &lt; n; i++)
+&nbsp;&nbsp;&nbsp; for (j = 0; j &lt; n; j++)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a[i][j] = a[i][j] + b[i][j];&nbsp;
+}
+
+int main()
+{&nbsp;
+&nbsp; int i, j, n, a[max][max], b[max][max];
+
+&nbsp; printf("Digite n: ");
+&nbsp; scanf("%d", &amp;n);&nbsp;
+&nbsp; printf("n = %d\n", n);
+&nbsp; for (i = 0; i &lt; n; i++)
+&nbsp;&nbsp;&nbsp; for (j = 0; j &lt; n; j++)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf("%d", &amp;a[i][j]);
+&nbsp; for (i = 0; i &lt; n; i++)
+&nbsp;&nbsp;&nbsp; for (j = 0; j &lt; n; j++)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf("%d", &amp;b[i][j]);
+&nbsp; imprime(a, n);&nbsp;
+&nbsp; imprime(b, n);&nbsp;&nbsp;
+&nbsp; soma(a, b, n);
+&nbsp; imprime(a, n);&nbsp;
+&nbsp; imprime(b, n);
+&nbsp; return 0;
+}</pre>
+
+<dl>Dados:
+<br>&nbsp; 2
+<br>&nbsp; 4&nbsp;&nbsp;&nbsp; 1
+<br>-2&nbsp;&nbsp;&nbsp; 8
+<br>&nbsp; 2&nbsp; -1
+<br>&nbsp; 5&nbsp;&nbsp;&nbsp; 4
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes3/22Simulacao.html">Resultado da Simulação<br></a>
+<p>23.&nbsp; (POLI 96) Simule a execução
+do seguinte programa, mostrando todos os valores intermediários
+gerados para cada variável e destacando a sua saída.</p></dl>
+
+<pre>#include &lt;stdio.h&gt;
+
+int g;
+
+int fa(int m[20][20], int a, int cte, int *p1, int p2)
+{&nbsp;
+&nbsp; int i, j;
+
+&nbsp; g = *p1;
+&nbsp; *p1 = p2;
+&nbsp; p2 = g;
+&nbsp; for (i = 0; i &lt; a; i++)
+&nbsp;&nbsp;&nbsp; for (j = 0; j &lt; a; j++)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m[i][j] = (3*i+j+cte)%5;
+&nbsp; printf("%d %d\n", m[0][0], m[0][1]);
+&nbsp; printf("%d %d\n", m[0][0], m[0][1]);
+&nbsp; printf("%d %d %d\n", g, *p1, p2);
+&nbsp; return(cte);
+}
+
+void flin(int m[], int i)
+{&nbsp;
+&nbsp; int g;
+&nbsp;
+&nbsp; for (g = 0; g &lt; i; g++)&nbsp;
+&nbsp;&nbsp;&nbsp; printf("%d ", m[g]);
+&nbsp; printf("\n");
+}
+
+void fpr(int m[20][20], int a)
+{
+&nbsp; int i;
+
+&nbsp; for (i = 0; i &lt; a; i++)&nbsp;
+&nbsp;&nbsp;&nbsp; flin(m[i], a);
+}
+
+int main()
+{&nbsp;
+&nbsp; int m[20][20], p1, p2, i, num;
+&nbsp; char c, s[20];
+&nbsp; float x, y;
+
+&nbsp; g = 0;
+&nbsp; printf("Digite um numero: ");
+&nbsp; scanf("%d", &amp;num);
+&nbsp; printf("num = %d, g = %d\n", num, g);
+&nbsp; p1 = 1;
+&nbsp; p2 = 3;
+&nbsp; m[0][0] = 1;
+&nbsp; m[0][1] = 0;
+&nbsp; m[1][0] = 0;
+&nbsp; m[1][1] = 1;
+&nbsp; fpr(m, 2);
+&nbsp; printf("g = %d\n", g);
+&nbsp; i = fa(m, 2, num, &amp;p1, p2);
+&nbsp; printf("%d %d %d %d\n", g, p1, p2, i);
+&nbsp; printf("%d %d\n", m[0][0], m[0][1]);
+&nbsp; printf("%d %d\n", m[0][0], m[0][1]);
+&nbsp; c = 'a' + num + 1;&nbsp;
+&nbsp; printf("%c\n", c);
+&nbsp; x = 5;
+&nbsp; p2 = 3;
+&nbsp; x = x/2;
+&nbsp; y = p2/2;
+&nbsp; printf("x = %3.1f, y = %3.1f\n", x, y);
+&nbsp; s[0] = 'a';
+&nbsp; s[1] = 'b';
+&nbsp; s[2] = 'c';
+&nbsp; s[3] = 'd';
+&nbsp; s[4] = 'e';
+&nbsp; s[5] = 'f';
+&nbsp; s[6] = '\0';
+&nbsp; printf("s = %s\n", s);
+&nbsp; s[2+num%3] = '\0';
+&nbsp; printf("s = %s\n", s);&nbsp;&nbsp;
+&nbsp; return 0;
+}</pre>
+
+<dl>Dados: 6
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes3/23Simulacao.html">Resultado da Simulação<br></a>
+<p>24.&nbsp; (POLI 87) Simule a execução
+do programa abaixo destacando a sua saída:</p></dl>
+
+<pre>#include &lt;stdio.h&gt;
+#define max 50
+
+int indmax(float v[], int n)
+{&nbsp;
+&nbsp; int j, indice;
+
+&nbsp; indice = 0;
+&nbsp; for (j = 1; j &lt; n; j++)
+&nbsp;&nbsp;&nbsp; if (v[j] &gt; v[indice])&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; indice = j;
+&nbsp; return(indice);
+}
+
+void roda(float v[], int n, int imaior)
+{&nbsp;
+&nbsp; int j, k;&nbsp;
+&nbsp; float x[max];
+
+&nbsp; k = imaior;
+&nbsp; for (j = 0; j &lt; k;&nbsp;&nbsp; j++)&nbsp;
+&nbsp;&nbsp;&nbsp; x[j] = v[j];
+&nbsp; for (j = 0; j &lt; n-k; j++)&nbsp;
+&nbsp;&nbsp;&nbsp; v[j] = v[j+k];
+&nbsp; for (j = 0; j &lt; k;&nbsp;&nbsp; j++)&nbsp;
+&nbsp;&nbsp;&nbsp; v[n-k+j] = x[j];
+}
+
+int main()
+{&nbsp;
+&nbsp; int i, m, n, l, c, imaior;
+&nbsp; float v[max], aux[max], a[max][max];
+
+&nbsp; printf("Digite m e n.\n");
+&nbsp; scanf("%d %d", &amp;m, &amp;n);&nbsp;
+&nbsp; printf("m = %d&nbsp;&nbsp; n = %d\n", m, n);
+&nbsp; printf("Digite uma matriz mxn.\n");
+&nbsp; for (l = 0; l &lt; m; l++) {&nbsp;
+&nbsp;&nbsp;&nbsp; for (c = 0; c &lt; n; c++) {&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf("%f", &amp;a[l][c]);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("%4.1f ", a[l][c]);&nbsp;
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; printf("\n");
+&nbsp; }
+&nbsp; for (l = 0; l &lt; m; l++) {&nbsp;
+&nbsp;&nbsp;&nbsp; for (i = 0; i &lt; n; i++)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; aux[i] = a[l][i];
+&nbsp;&nbsp;&nbsp; imaior = indmax(aux, n);&nbsp;
+&nbsp;&nbsp;&nbsp; printf("%d\n", imaior);
+&nbsp;&nbsp;&nbsp; roda(aux, n, imaior);
+&nbsp;&nbsp;&nbsp; for (i = 0; i &lt; n; i++)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a[l][i] = aux[i];&nbsp;
+&nbsp;&nbsp;&nbsp; for (c = 0; c &lt; n; c++)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("%4.1f ", a[l][c]);
+&nbsp;&nbsp;&nbsp; printf("\n");
+&nbsp; }
+&nbsp; for (l = 0; l &lt; m; l++)&nbsp;
+&nbsp;&nbsp;&nbsp; v[l] = a[l][0];
+&nbsp; imaior = indmax(v, m);
+&nbsp; printf("\n%4.1f\n", a[imaior][0]);
+&nbsp; return 0;
+}</pre>
+
+<dl>Dados:</dl>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -1.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.6
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -2.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-3.5
+<br>&nbsp;&nbsp;&nbsp; -0.5&nbsp;&nbsp;&nbsp;&nbsp; -2.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.0
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes3/24Simulacao.html">Resultado da Simulação<br></a>
+<p>25.&nbsp; Considere as seguintes declarações:
+
+</p><pre>void m(int x[][2], int y[][2], int z[][2])
+{&nbsp;
+&nbsp; z[0][0] = x[0][0] * y[0][0] + x[0][1] * y[1][0];
+&nbsp; z[0][1] = x[0][0] * y[0][1] + x[0][1] * y[1][1];
+&nbsp; z[1][0] = x[1][0] * y[0][0] + x[1][1] * y[1][0];
+&nbsp; z[1][1] = x[1][0] * y[0][1] + x[1][1] * y[1][1];
+}</pre>
+
+<dl>Dados:
+<center><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/Image725.gif" nosave="" height="48" width="225"></center>
+</dl>
+Simule as seguintes chamadas da função acima:
+<dl>(a) m (A, B, C);
+<br>(b) m (A, B, A);
+<br>(c) m (A, B, B).
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes3/25Simulacao.html">Resultado da Simulação<br></a>
+<p>
+</p><hr>
+<center><font color="#663300">Notas do texto</font></center>
+<a name="nota1"></a><font color="#663300"><font size="-1">1) É o mesmo
+Isaac Newton da maçã.</font></font>
+<br><a name="nota2"></a><font color="#663300"><font size="-1">2) Frase de
+origem e conteúdo indefinidos...</font></font>
+<br><p>
+</p><hr>
+<center><table cols="3" border="0" width="50%%">
+<tbody><tr align="CENTER" valign="CENTER">
+<td><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes3/index.html"><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/topo.gif" alt="Topo da Página" nosave="" border="0" height="40" width="40"></a></td>
+
+<td align="CENTER" valign="CENTER"><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/index.html"><img src="Exerc%C3%ADcios%20com%20Fun%C3%A7%C3%B5es%20-%20Parte%20III_arquivos/volta.gif" alt="Índice das Listas" nosave="" border="0" height="40" width="40"></a></td>
+
+</tr>
+</tbody></table></center>
+
+<hr size="3" width="99%%">
+<center>
+<font face="ARIAL" size="2"><b><a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes3/historico/">História
+da Computação</a> | <a href="http://www.ime.usp.br/%7Emacmulti/exercicios/index.html">Listas de
+Exercícios</a> | <a href="http://www.ime.usp.br/%7Emacmulti/exercicios/funcoes3/problemas/index.html">Problemas Resolvidos</a> | <a href="mailto:macmulti@ime.usp.br" onmouseover="window.status='Mande suas dúvidas ou sugestões.'; return true">macmulti@ime.usp.br</a></b></font><b>
+</b></center><b>
+<br>&nbsp;
+
+
+</b></dl></body></html>
